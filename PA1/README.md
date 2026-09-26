@@ -1,0 +1,104 @@
+# PA1: Learning Beyond IID and Closed-Set Recognition
+
+**Wasif Ahmed · [WasifAhmed1917](https://github.com/WasifAhmed1917)**
+
+Advanced Topics in Machine Learning, Fall 2026 — Programming Assignment 1.
+
+This directory contains the supplied experiment notebooks for inductive biases, domain adaptation, domain generalization, and open-set recognition. Notebook code and saved outputs are preserved unchanged from `PA1.zip`; SHA-256 hashes are recorded in [notebook_manifest.json](notebook_manifest.json).
+
+## Directory structure
+
+```text
+PA1/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── notebook_manifest.json
+├── task1/
+│   ├── ATML_PA1_Task1.ipynb
+│   ├── ATML_PA1_Task1_Controlled.ipynb
+│   ├── README.md
+│   └── results/README.md
+├── task2/
+│   ├── ATML_PA1_Task2.ipynb
+│   ├── README.md
+│   └── results/README.md
+├── task3/
+│   ├── ATML_PA1_Task3.ipynb
+│   ├── README.md
+│   └── results/README.md
+├── task4/
+│   ├── ATML_PA1_Task4.ipynb
+│   ├── README.md
+│   └── results/README.md
+└── report/
+    └── figures/README.md
+```
+
+The assignment's recommended task boundaries are retained inside the requested `PA1/` folder. Implementations remain in notebooks rather than being refactored into the suggested separate Python modules. Configuration, split construction, training, and evaluation are in labeled notebook sections. No artificial shared `common/` package is introduced.
+
+## Environment and execution
+
+1. Open a notebook in **Google Colab** using its GitHub URL or the links below.
+2. Select a **GPU runtime**. The notebooks assert CUDA availability; a CPU-only run is not supported as supplied. Use Python **3.12 or newer** for the f-string syntax in the supplied code.
+3. Colab provides `google.colab`, PyTorch, and torchvision. Install missing dependencies from [requirements.txt](requirements.txt), for example after cloning the repository in Colab:
+
+   ```python
+   %pip install -r /content/ATML/PA1/requirements.txt
+   ```
+
+   The file is a dependency inventory, not an exact package lock from the original experiments. Preserve the runtime's compatible PyTorch/torchvision/CUDA installation and record installed versions with `python -m pip freeze` when reproducing a run.
+4. Mount Google Drive when prompted. Outputs are written to the locations below, not automatically into this Git repository.
+5. Execute cells in order, observing Task 1's manual review pauses. Complete Task 2 before Task 3; Tasks 1 and 4 are independent.
+
+| Task | Notebook / Colab | Scope |
+| --- | --- | --- |
+| 1 | [AdaIN notebook](task1/ATML_PA1_Task1.ipynb) · [Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA1/task1/ATML_PA1_Task1.ipynb) | STL-10; frozen ResNet-50, ViT-B/16, CLIP; color, texture, translation, patch interventions |
+| 1 variant | [Controlled notebook](task1/ATML_PA1_Task1_Controlled.ipynb) · [Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA1/task1/ATML_PA1_Task1_Controlled.ipynb) | Separate VGG19/foreground-mask cue-conflict construction |
+| 2 | [Notebook](task2/ATML_PA1_Task2.ipynb) · [Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA1/task2/ATML_PA1_Task2.ipynb) | PACS source-only, DAN, DANN, CDAN |
+| 3 | [Notebook](task3/ATML_PA1_Task3.ipynb) · [Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA1/task3/ATML_PA1_Task3.ipynb) | Shared ERM baseline, DAN-DG, SAM; unseen Sketch domain |
+| 4 | [Notebook](task4/ATML_PA1_Task4.ipynb) · [Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA1/task4/ATML_PA1_Task4.ipynb) | CIFAR-10 known classes; fixed CIFAR-100 unknown groups; Vanilla, GCSC, PROSER |
+
+### Data preparation
+
+- **STL-10:** downloaded by torchvision to `/content/stl10_data` in Task 1.
+- **PACS:** Tasks 2–3 use the Hugging Face dataset `Azeez577/PACS`, revision `46a0a83`, archive `PACS.zip`. The notebooks verify SHA-256 `42bf567f1ed8a01d522e47e4a677e2a3149577bbd6fcbb38bedfdd73cb59e147` and extract to `/content/PACS_extracted`. Task 2 also supports an existing `/content/PACS` input. Task 3 expects the extracted layout.
+- **CIFAR-10 / CIFAR-100:** downloaded by torchvision to `/content/data` in Task 4.
+- Pretrained torchvision and OpenCLIP weights are downloaded by the libraries. The AdaIN Task 1 notebook additionally clones `naoto0804/pytorch-AdaIN` and downloads its encoder/decoder weights.
+
+Datasets, feature caches, and model checkpoints are intentionally excluded from Git. Network access, sufficient GPU memory, and Drive storage are required.
+
+### Reproducibility and task dependencies
+
+The notebooks use seed **6304** and contain the split logic. Task 1 creates a stratified 80/20 training split and a balanced 500-image test subset. Tasks 2–3 share source-domain 80/20 splits and the source-only/ERM checkpoint. Task 4 uses a stratified 90/10 CIFAR-10 training/validation split.
+
+Task 1 cue conflicts require **manual visual acceptance/rejection before evaluation**. Do not use an unattended “Run all” through the review stage. Keep the review CSV and selected IDs with the exported results. The two Task 1 notebooks are distinct experiments; keep their outputs separate and identify which variant supports each reported result.
+
+Task 2 writes the Task 3 settings lock before its final labeled target evaluation. Task 3 reads this lock, the identical ERM checkpoint, source splits, configuration, and Task 2 summary. Its final comparison uses the Task 2 summary; do not use target results to revise the locked Task 3 settings. See each task README for exact prerequisites.
+
+## Saved artifacts
+
+Paths below are relative to `/content/drive/MyDrive/ATML_PA1/` except where explicitly absolute.
+
+| Task | Runtime output location | Examples of generated artifacts |
+| --- | --- | --- |
+| 1 AdaIN | `/content/task1_results`; final backup cell copies to `Task1_STL10/` | `config.json`, split/test IDs, cue review, `performance.csv`, `shape_bias.csv`, translation and representation results |
+| 1 controlled | `Task1_STL10_Controlled/` | Separate config, review/accepted IDs, performance tables, cue figures, t-SNE results |
+| 2 | `Task2_PACS_stabilized/results/` | `config.json`, `splits/pacs_sketch_seed6304.json`, settings lock, `task2_summary.csv`, per-class metrics and failures |
+| 3 | `Task3_PACS/results/` | `config.json`, `task3_summary.csv`, source diagnostics, strength study, Task 2 comparison |
+| 4 | `Task4_CIFAR_OSR/` (`results/`, `arrays/`, `checkpoints/`) | `frozen_protocol.json`, `environment.json`, `vanilla_scores.csv`, `trained_models.csv`, failure tables and figures |
+
+**Included:** five notebooks with their saved cell outputs, documentation, dependency inventory, and integrity manifest. **Not supplied in the ZIP:** standalone CSV/JSON experiment exports, saved split files, exact environment lock, checkpoints, or the final report PDF. The `results/` directories document where to add original exports; they do not claim those exports are already present. Saved notebook output is not a replacement for all required reproducibility artifacts.
+
+For submission, copy small original CSV/JSON result files, configurations, and split indices from the runtime output directories into the corresponding task's `results/` directory (keep Task 1 variants separate). Put selected report figures in `report/figures/` and the separately prepared report PDF in `report/`. Keep large arrays, raw data, and unnecessary checkpoints outside Git. Every reported number should trace to an exported result or a reproducible notebook section.
+
+## Attribution
+
+- **Direct external implementation used by the AdaIN notebook:** [naoto0804/pytorch-AdaIN](https://github.com/naoto0804/pytorch-AdaIN), including `net`, `adaptive_instance_normalization`, and pretrained encoder/decoder weights. The notebook records the cloned commit in `config.json`. Respect the upstream license for reused code and weights.
+- **Libraries and pretrained models:** PyTorch/torchvision (models, datasets, transforms), OpenCLIP (`ViT-B-32`, `pretrained='openai'`), scikit-learn, NumPy, pandas, SciPy, Matplotlib, Pillow, OpenCV (GrabCut), tqdm, ipywidgets, and Hugging Face Hub.
+- **Method references specified by the assignment:** Geirhos et al. (2019), Huang and Belongie (2017, AdaIN), Long et al. (2015, DAN; 2018, CDAN), Ganin et al. (2016, DANN), Foret et al. (2021, SAM), and Zhou et al. (2021, PROSER). Method references do not establish that source code was copied from those authors.
+- This README, dependency inventory, and repository organization were prepared with coding-assistant help. The supplied notebook bytes were preserved. Any additional external code reuse in the original notebooks must be attributed by the author; the original development history was not supplied.
+
+## Verification scope
+
+Packaging checks validate notebook JSON, unchanged source hashes, local documentation links, and Git contents. Training and evaluation have not been rerun as part of this upload; this README does not certify full experimental or report compliance.
