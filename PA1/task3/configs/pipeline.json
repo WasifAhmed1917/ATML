@@ -1,0 +1,64 @@
+{
+  "notebook": "task3/ATML_PA1_Task3.ipynb",
+  "notebook_sha256": "aa3f4075d9240d81ccd28baa4086ed599b1bcaf28dd25c1213ac2aa4df1e6a8f",
+  "execution_model": "Ordered Python stage scripts sharing one namespace; not independent imports.",
+  "stages": [
+    {
+      "name": "setup",
+      "file": "configs/setup.py",
+      "source_cells": [
+        1
+      ],
+      "sha256": "151c2b1c92df6fe26ce4f9cc937ac71a1ed57e9d659b01ca10ae27ee6f30c19f"
+    },
+    {
+      "name": "pacs",
+      "file": "data/pacs.py",
+      "source_cells": [
+        3
+      ],
+      "sha256": "95975c2bba0baa2b8f5603115a209e28d4a4942432734578a9478eef4f674cec"
+    },
+    {
+      "name": "train",
+      "file": "train.py",
+      "source_cells": [
+        5
+      ],
+      "sha256": "733108a66aadf1ea8a859ec024f27c74466156492ffee9ecfa536510135e1f89"
+    },
+    {
+      "name": "source_validation",
+      "file": "selection/source_validation.py",
+      "source_cells": [
+        7
+      ],
+      "sha256": "20ccf050bde46ac82f607e4d2e0eddb17be548bbd20a7d336fc4584f33904856"
+    },
+    {
+      "name": "source_diagnostics",
+      "file": "evaluation/source_diagnostics.py",
+      "source_cells": [
+        9
+      ],
+      "sha256": "dd5d513e5aeddc18390a635863d46ae4fde71a1283eba5b03ce237a4b0247f92"
+    },
+    {
+      "name": "evaluate_sketch",
+      "file": "evaluate_sketch.py",
+      "source_cells": [
+        11
+      ],
+      "sha256": "68e0204c839d1faed38ce1cf9f9b8b49d99c47dc25266eab545db713177b640c"
+    },
+    {
+      "name": "class_analysis",
+      "file": "evaluation/class_analysis.py",
+      "source_cells": [
+        13
+      ],
+      "sha256": "5b32ba6646e331d71049ffe12169edb6609995ca460432c6dbc3ff3c95263b29"
+    }
+  ],
+  "optional_stages": []
+}

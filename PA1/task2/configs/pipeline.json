@@ -1,0 +1,88 @@
+{
+  "notebook": "task2/ATML_PA1_Task2.ipynb",
+  "notebook_sha256": "094a32478bacb767259b75e99485e168321ee30d639db362e53e520e1d643fe3",
+  "execution_model": "Ordered Python stage scripts sharing one namespace; not independent imports.",
+  "stages": [
+    {
+      "name": "setup",
+      "file": "configs/setup.py",
+      "source_cells": [
+        2
+      ],
+      "sha256": "c86821f12620081b078d7c5e12e5afa5f415d61760c01e554fa7cc1f12b602ea"
+    },
+    {
+      "name": "pacs",
+      "file": "data/pacs.py",
+      "source_cells": [
+        4
+      ],
+      "sha256": "54268a6a53ac573ef8ff44ee7dbc7c0a53b3eeccf147318fc67650ad273e12de"
+    },
+    {
+      "name": "backbone",
+      "file": "models/backbone.py",
+      "source_cells": [
+        6
+      ],
+      "sha256": "e1514507d4c7e9ae8e694363289958a845f1ca8c41e90763210ad64216358a85"
+    },
+    {
+      "name": "alignment",
+      "file": "methods/alignment.py",
+      "source_cells": [
+        8
+      ],
+      "sha256": "a8770da6f0c10aac84bef39a5d28bdc28c7172360b4e7be51552654ded7039f6"
+    },
+    {
+      "name": "train",
+      "file": "train.py",
+      "source_cells": [
+        10
+      ],
+      "sha256": "7b9ec96749fd5de7088313875f50e9b5278f0e750c00f3650401e24c03f121d5"
+    },
+    {
+      "name": "source_validation",
+      "file": "evaluation/source_validation.py",
+      "source_cells": [
+        12
+      ],
+      "sha256": "5dfc52ef1339c8811a238a53ee5039e920644340904a601552492cacd1c00adc"
+    },
+    {
+      "name": "domain_separability",
+      "file": "evaluation/domain_separability.py",
+      "source_cells": [
+        14
+      ],
+      "sha256": "b8290c36f78ecd7a3b6915ba1ecd7df90cb5375ff303dd7d395015b79991630b"
+    },
+    {
+      "name": "lock_task3",
+      "file": "configs/lock_task3.py",
+      "source_cells": [
+        16
+      ],
+      "sha256": "946182c52cc18bb8070a7b8a59ea34a9a08b84d2792f522a5722208c791238f2"
+    },
+    {
+      "name": "evaluate_final",
+      "file": "evaluate_final.py",
+      "source_cells": [
+        18
+      ],
+      "sha256": "44493f1db3262599f5014751c313dd486d453dcd814da7f7f9138554b56cafa5"
+    },
+    {
+      "name": "class_analysis",
+      "file": "evaluation/class_analysis.py",
+      "source_cells": [
+        20
+      ],
+      "sha256": "920e2ec52fe4fcd7b3d8686155eb638d42303d55f05d86f06359b35f75e58973"
+    }
+  ],
+  "optional_stages": []
+}

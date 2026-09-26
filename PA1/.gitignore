@@ -7,7 +7,7 @@ __pycache__/
 venv/
 wandb/
 # Raw datasets and large generated artifacts (keep CSV/JSON results trackable).
-data/
+/data/
 datasets/
 stl10_data/
 PACS/

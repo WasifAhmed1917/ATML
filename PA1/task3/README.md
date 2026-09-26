@@ -14,3 +14,7 @@ It checks matching checkpoint hashes and locked settings. PACS is expected under
 Output: `/content/drive/MyDrive/ATML_PA1/Task3_PACS/results`. Export configuration, `task3_summary.csv`, source diagnostics, Sketch per-class/confusion/failure tables, strength study, and the Task 2 DAN versus Task 3 DAN-DG comparison to `results/`.
 
 See the [PA1 README](../README.md) for dependencies, attribution, and repository status.
+
+## Python implementation and results
+
+The Python stages and `scripts/run_task3.py` entry point are documented in [PYTHON_MODULES.md](../PYTHON_MODULES.md). [CSV/JSON results and supporting artifacts](https://drive.google.com/drive/folders/1QFqu7rfbbX2YxfVg_aJJ3Z0eTg7HbkP-?usp=sharing) are linked on Drive.

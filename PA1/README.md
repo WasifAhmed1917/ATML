@@ -1,8 +1,10 @@
-# PA1: Learning Beyond IID and Closed-Set Recognition
+# How Do Visual Models Use Cues, Adapt to Domain Shift, Generalize, and Reject Unknowns?
 
 **Wasif Ahmed · [WasifAhmed1917](https://github.com/WasifAhmed1917)**
 
 Advanced Topics in Machine Learning, Fall 2026 — Programming Assignment 1.
+
+**[Read the report](report/How_Do_Visual_Models_Use_Cues__Adapt_to_Domain_Shift__Generalize__and_Reject_Unknowns_.pdf) · [CSV/JSON results and supporting artifacts on Google Drive](https://drive.google.com/drive/folders/1QFqu7rfbbX2YxfVg_aJJ3Z0eTg7HbkP-?usp=sharing)**
 
 This directory contains the supplied experiment notebooks for inductive biases, domain adaptation, domain generalization, and open-set recognition. Notebook code and saved outputs are preserved unchanged from `PA1.zip`; SHA-256 hashes are recorded in [notebook_manifest.json](notebook_manifest.json).
 
@@ -11,31 +13,60 @@ This directory contains the supplied experiment notebooks for inductive biases, 
 ```text
 PA1/
 ├── README.md
+├── PYTHON_MODULES.md
 ├── requirements.txt
 ├── .gitignore
 ├── notebook_manifest.json
+├── common/stages.py                 # shared experiment runner
+├── tools/verify_modules.py          # source-parity and syntax checks
 ├── task1/
-│   ├── ATML_PA1_Task1.ipynb
-│   ├── ATML_PA1_Task1_Controlled.ipynb
-│   ├── README.md
+│   ├── ATML_PA1_Task1*.ipynb
+│   ├── configs/                     # setup + pipeline.json
+│   ├── data/                        # subset, transforms, cue construction/review
+│   ├── models/backbones.py
+│   ├── train.py
+│   ├── analysis/                    # bias, similarity, representation analysis
+│   ├── scripts/run_task1.py
+│   ├── controlled/                  # separate Python stages for controlled variant
 │   └── results/README.md
 ├── task2/
 │   ├── ATML_PA1_Task2.ipynb
-│   ├── README.md
+│   ├── configs/                     # setup, pipeline, Task 3 settings lock
+│   ├── data/pacs.py
+│   ├── models/backbone.py
+│   ├── methods/alignment.py
+│   ├── train.py
+│   ├── evaluate_final.py
+│   ├── evaluation/
+│   ├── scripts/run_task2.py
 │   └── results/README.md
 ├── task3/
 │   ├── ATML_PA1_Task3.ipynb
-│   ├── README.md
+│   ├── configs/
+│   ├── data/pacs.py
+│   ├── train.py
+│   ├── selection/source_validation.py
+│   ├── evaluate_sketch.py
+│   ├── evaluation/
+│   ├── scripts/run_task3.py
 │   └── results/README.md
 ├── task4/
 │   ├── ATML_PA1_Task4.ipynb
-│   ├── README.md
+│   ├── configs/
+│   ├── data/cifar10.py
+│   ├── models/resnet_cifar.py
+│   ├── train.py
+│   ├── extract_outputs.py
+│   ├── evaluate_osr.py
+│   ├── evaluation/
+│   ├── scripts/run_task4.py
 │   └── results/README.md
 └── report/
+    ├── How_Do_Visual_Models_Use_Cues__Adapt_to_Domain_Shift__Generalize__and_Reject_Unknowns_.pdf
     └── figures/README.md
 ```
 
-The assignment's recommended task boundaries are retained inside the requested `PA1/` folder. Implementations remain in notebooks rather than being refactored into the suggested separate Python modules. Configuration, split construction, training, and evaluation are in labeled notebook sections. No artificial shared `common/` package is introduced.
+The assignment labels its detailed Python-module layouts as **suggested**. This repository now provides Python stage files organized by task and responsibility, alongside the original notebooks. The stages preserve notebook code and share a runtime namespace through `common/stages.py`; they are not independent importable library APIs. Some notebook sections combine model/training or extraction/scoring logic, and those remain together to preserve the implementation. See [Python execution and provenance](PYTHON_MODULES.md) for commands, manual-review handling, and the exact scope of the conversion.
 
 ## Environment and execution
 
@@ -88,17 +119,19 @@ Paths below are relative to `/content/drive/MyDrive/ATML_PA1/` except where expl
 | 3 | `Task3_PACS/results/` | `config.json`, `task3_summary.csv`, source diagnostics, strength study, Task 2 comparison |
 | 4 | `Task4_CIFAR_OSR/` (`results/`, `arrays/`, `checkpoints/`) | `frozen_protocol.json`, `environment.json`, `vanilla_scores.csv`, `trained_models.csv`, failure tables and figures |
 
-**Included:** five notebooks with their saved cell outputs, documentation, dependency inventory, and integrity manifest. **Not supplied in the ZIP:** standalone CSV/JSON experiment exports, saved split files, exact environment lock, checkpoints, or the final report PDF. The `results/` directories document where to add original exports; they do not claim those exports are already present. Saved notebook output is not a replacement for all required reproducibility artifacts.
+**Results archive:** [CSV/JSON files and supporting experiment artifacts](https://drive.google.com/drive/folders/1QFqu7rfbbX2YxfVg_aJJ3Z0eTg7HbkP-?usp=sharing). This is the author-provided Drive folder. Its contents and anonymous-access permissions were not verified during packaging. The task `results/README.md` files point to the same archive and list expected artifacts.
 
-For submission, copy small original CSV/JSON result files, configurations, and split indices from the runtime output directories into the corresponding task's `results/` directory (keep Task 1 variants separate). Put selected report figures in `report/figures/` and the separately prepared report PDF in `report/`. Keep large arrays, raw data, and unnecessary checkpoints outside Git. Every reported number should trace to an exported result or a reproducible notebook section.
+**Included in Git:** five unchanged notebooks with saved cell outputs, notebook-derived Python stages, execution manifests, documentation, dependency inventory, and the supplied final report PDF. The report is uploaded unchanged. Experiment CSV/JSON exports are linked through Drive rather than copied into Git; the JSON pipeline files in this repository describe execution order and are not experiment-result exports.
+
+The assignment also asks for machine-readable results and split/configuration artifacts in the GitHub repository. The external Drive link provides an artifact location but does not itself meet that repository-specific requirement. Small original CSV/JSON results and split indices can be added under the corresponding `results/` directories; keep Task 1 variants separate and large datasets/checkpoints outside Git.
 
 ## Attribution
 
 - **Direct external implementation used by the AdaIN notebook:** [naoto0804/pytorch-AdaIN](https://github.com/naoto0804/pytorch-AdaIN), including `net`, `adaptive_instance_normalization`, and pretrained encoder/decoder weights. The notebook records the cloned commit in `config.json`. Respect the upstream license for reused code and weights.
 - **Libraries and pretrained models:** PyTorch/torchvision (models, datasets, transforms), OpenCLIP (`ViT-B-32`, `pretrained='openai'`), scikit-learn, NumPy, pandas, SciPy, Matplotlib, Pillow, OpenCV (GrabCut), tqdm, ipywidgets, and Hugging Face Hub.
 - **Method references specified by the assignment:** Geirhos et al. (2019), Huang and Belongie (2017, AdaIN), Long et al. (2015, DAN; 2018, CDAN), Ganin et al. (2016, DANN), Foret et al. (2021, SAM), and Zhou et al. (2021, PROSER). Method references do not establish that source code was copied from those authors.
-- This README, dependency inventory, and repository organization were prepared with coding-assistant help. The supplied notebook bytes were preserved. Any additional external code reuse in the original notebooks must be attributed by the author; the original development history was not supplied.
+- This README, dependency inventory, Python stage packaging, and repository organization were prepared with coding-assistant help. The supplied notebook bytes were preserved. Any additional external code reuse in the original notebooks must be attributed by the author; the original development history was not supplied.
 
 ## Verification scope
 
-Packaging checks validate notebook JSON, unchanged source hashes, local documentation links, and Git contents. Training and evaluation have not been rerun as part of this upload; this README does not certify full experimental or report compliance.
+Packaging checks validate notebook JSON, unchanged notebook/report hashes, Python syntax, exact stage-to-notebook source parity, runner pause/resume behavior, local documentation links, and Git contents. Training and evaluation have not been rerun as part of this upload; this README does not certify full experimental or report compliance.

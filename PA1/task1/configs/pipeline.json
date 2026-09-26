@@ -1,0 +1,146 @@
+{
+  "notebook": "task1/ATML_PA1_Task1.ipynb",
+  "notebook_sha256": "ef8896f889dde7a84ebe206c943712bb2f296b3426afad409eec165ed70ca5b1",
+  "execution_model": "Ordered Python stage scripts sharing one namespace; not independent imports.",
+  "stages": [
+    {
+      "name": "setup",
+      "file": "configs/setup.py",
+      "source_cells": [
+        3,
+        4
+      ],
+      "sha256": "7560962d36c5d569fc1c6be466a296c7c9b1f751bdce8891e7374362b7544f57"
+    },
+    {
+      "name": "make_subset",
+      "file": "data/make_subset.py",
+      "source_cells": [
+        6
+      ],
+      "sha256": "5b0ff61dd5c601e03c7a2b9089ce000534e28ce85c4a2b624ec8c3de462554d6"
+    },
+    {
+      "name": "backbones",
+      "file": "models/backbones.py",
+      "source_cells": [
+        7
+      ],
+      "sha256": "217b5205f783513d9b866f4e2cc8f80d1f63785441d93c0cde76639b15daed48"
+    },
+    {
+      "name": "train",
+      "file": "train.py",
+      "source_cells": [
+        8
+      ],
+      "sha256": "bdbd3e64204b954b04dd3edd36d6f7ef4998f7e43a8d47b1167cd693b32b16e1"
+    },
+    {
+      "name": "clean_baseline",
+      "file": "analysis/clean_baseline.py",
+      "source_cells": [
+        10
+      ],
+      "sha256": "961d2f204866d98b9b07af609f61f0de4a2d0fd44b52007f3a961d8695ee3866"
+    },
+    {
+      "name": "color_transforms",
+      "file": "data/color_transforms.py",
+      "source_cells": [
+        12
+      ],
+      "sha256": "a8d46292edbec4a2e3c995890053f875ab92fd03d66128f1f83da6de89849132"
+    },
+    {
+      "name": "make_cue_conflicts",
+      "file": "data/make_cue_conflicts.py",
+      "source_cells": [
+        14,
+        15,
+        16
+      ],
+      "sha256": "a50811a7937113c22a209d7c2d888aa90dd1e374ba9fe6918a470714daa338ed"
+    },
+    {
+      "name": "review_cues",
+      "file": "data/review_cues.py",
+      "source_cells": [
+        17
+      ],
+      "sha256": "f0b4fc4bb492cfbcc3c2176e6de8c134065b92f764c8f416584582277f159712",
+      "pause_after": true
+    },
+    {
+      "name": "accept_cues",
+      "file": "data/accept_cues.py",
+      "source_cells": [
+        18
+      ],
+      "sha256": "04c6adf58dfdd1080b874ac1ec64804d9eabad4ddd13332ea8025b8bb609e8c9"
+    },
+    {
+      "name": "transforms",
+      "file": "data/transforms.py",
+      "source_cells": [
+        21
+      ],
+      "sha256": "6332557b2a60bb941cc8a28e351615bdc808a195878b105b490870d5334cb4b9"
+    },
+    {
+      "name": "evaluate_bias",
+      "file": "analysis/evaluate_bias.py",
+      "source_cells": [
+        23,
+        25,
+        27,
+        29
+      ],
+      "sha256": "308eae32ef72244f643e322cff5001a29843c051250252afa5563410e9a2f064"
+    },
+    {
+      "name": "feature_similarity",
+      "file": "analysis/feature_similarity.py",
+      "source_cells": [
+        31
+      ],
+      "sha256": "c98aac48d654ff06c5ec6c885c6831cf7b7ede249a88d0e486a639f4dbecb16d"
+    },
+    {
+      "name": "representation",
+      "file": "analysis/representation.py",
+      "source_cells": [
+        32,
+        33
+      ],
+      "sha256": "167ec9e435b3b0276300da7e3a7774d0cc5b2986458aebea736341df119c6315"
+    },
+    {
+      "name": "backup_results",
+      "file": "scripts/backup_results.py",
+      "source_cells": [
+        34
+      ],
+      "sha256": "73b2f3de33c4c0dd1116eb3f5969d0fd7b592a897a54badde35699e68d81112b"
+    }
+  ],
+  "optional_stages": [
+    {
+      "name": "expand_cues",
+      "file": "data/expand_cues.py",
+      "source_cells": [
+        19
+      ],
+      "sha256": "e01d0a3973b1ffc384f5d4e175ae9b6c02d7d93afffc429ab40c1f6637b32449"
+    },
+    {
+      "name": "review_cues",
+      "file": "data/review_cues.py",
+      "source_cells": [
+        17
+      ],
+      "sha256": "f0b4fc4bb492cfbcc3c2176e6de8c134065b92f764c8f416584582277f159712",
+      "pause_after": true
+    }
+  ]
+}

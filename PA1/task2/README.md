@@ -9,3 +9,7 @@ Checkpoint selection uses source-validation macro-F1. Preserve the Task 3 settin
 Copy small CSV/JSON exports and source split indices into `results/`. Keep checkpoints outside Git. Target labels must not be used to select models or settings.
 
 See the [PA1 README](../README.md) for dependencies, attribution, and repository status.
+
+## Python implementation and results
+
+The Python stages and `scripts/run_task2.py` entry point are documented in [PYTHON_MODULES.md](../PYTHON_MODULES.md). [CSV/JSON results and supporting artifacts](https://drive.google.com/drive/folders/1QFqu7rfbbX2YxfVg_aJJ3Z0eTg7HbkP-?usp=sharing) are linked on Drive.

@@ -10,3 +10,7 @@ At the cue-conflict review widget, accept/reject images visually before predicti
 Export `config.json`, training/validation IDs, selected test IDs, cue-review and accepted-ID CSVs, `performance.csv`, `shape_bias.csv`, translation CSVs, and representation-stability/projection outputs. Keep AdaIN and controlled exports in separate subfolders of `results/`.
 
 See the [PA1 README](../README.md) for dependencies, attribution, and repository status.
+
+## Python implementation and results
+
+The Python stages and `scripts/run_task1.py` entry point are documented in [PYTHON_MODULES.md](../PYTHON_MODULES.md). [CSV/JSON results and supporting artifacts](https://drive.google.com/drive/folders/1QFqu7rfbbX2YxfVg_aJJ3Z0eTg7HbkP-?usp=sharing) are linked on Drive.

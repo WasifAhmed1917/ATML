@@ -1,0 +1,72 @@
+{
+  "notebook": "task4/ATML_PA1_Task4.ipynb",
+  "notebook_sha256": "212dd240793053a6814971cae9d3b81a2e9919471f49b7a6fe290c20b09d2713",
+  "execution_model": "Ordered Python stage scripts sharing one namespace; not independent imports.",
+  "stages": [
+    {
+      "name": "setup",
+      "file": "configs/setup.py",
+      "source_cells": [
+        1
+      ],
+      "sha256": "451da6b5354d56c8b8f6cf403eac4f86e0d46f4b5486b4d6a1d8419e45d8c0e4"
+    },
+    {
+      "name": "cifar10",
+      "file": "data/cifar10.py",
+      "source_cells": [
+        3
+      ],
+      "sha256": "21729005849c9a0004d655329bef4c141da81be50b409b92ecfdebf16c180188"
+    },
+    {
+      "name": "resnet_cifar",
+      "file": "models/resnet_cifar.py",
+      "source_cells": [
+        5
+      ],
+      "sha256": "26ce123dcf26faf057c90d9f8095bc5716d202e9ba237698223828195c1fa2fb"
+    },
+    {
+      "name": "train",
+      "file": "train.py",
+      "source_cells": [
+        7
+      ],
+      "sha256": "007def9d6ad8ad0a42374ae7f1d83104feba98186d118453cf6bdcd52efd3565"
+    },
+    {
+      "name": "extract_outputs",
+      "file": "extract_outputs.py",
+      "source_cells": [
+        9
+      ],
+      "sha256": "4fcfea12a341f342181318423573d41365b57827112ee0a2c27779e48a25a5f5"
+    },
+    {
+      "name": "evaluate_osr",
+      "file": "evaluate_osr.py",
+      "source_cells": [
+        11
+      ],
+      "sha256": "ec04fa9abb65c5f78735e6ad4d5dec428931739bcdb2a1ee3179031e2d9f683d"
+    },
+    {
+      "name": "failure_analysis",
+      "file": "evaluation/failure_analysis.py",
+      "source_cells": [
+        13
+      ],
+      "sha256": "7f37e1e31ded399919b7092dc0b689df92a015a540d8ab368db325625a1d03fa"
+    },
+    {
+      "name": "score_analysis",
+      "file": "evaluation/score_analysis.py",
+      "source_cells": [
+        15
+      ],
+      "sha256": "58945fa8734c801a3e50ce625799f1a9f2d5ca3d0cfb788b8f85810a5c52881a"
+    }
+  ],
+  "optional_stages": []
+}
