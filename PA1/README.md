@@ -6,8 +6,6 @@ Advanced Topics in Machine Learning, Fall 2026 — Programming Assignment 1.
 
 **[Read the report](report/How_Do_Visual_Models_Use_Cues__Adapt_to_Domain_Shift__Generalize__and_Reject_Unknowns_.pdf) · [CSV/JSON results and supporting artifacts on Google Drive](https://drive.google.com/drive/folders/1QFqu7rfbbX2YxfVg_aJJ3Z0eTg7HbkP-?usp=sharing)**
 
-This directory contains the supplied experiment notebooks for inductive biases, domain adaptation, domain generalization, and open-set recognition. Notebook code and saved outputs are preserved unchanged from `PA1.zip`; SHA-256 hashes are recorded in [notebook_manifest.json](notebook_manifest.json).
-
 ## Directory structure
 
 ```text
@@ -65,8 +63,6 @@ PA1/
     ├── How_Do_Visual_Models_Use_Cues__Adapt_to_Domain_Shift__Generalize__and_Reject_Unknowns_.pdf
     └── figures/README.md
 ```
-
-The assignment labels its detailed Python-module layouts as **suggested**. This repository now provides Python stage files organized by task and responsibility, alongside the original notebooks. The stages preserve notebook code and share a runtime namespace through `common/stages.py`; they are not independent importable library APIs. Some notebook sections combine model/training or extraction/scoring logic, and those remain together to preserve the implementation. See [Python execution and provenance](PYTHON_MODULES.md) for commands, manual-review handling, and the exact scope of the conversion.
 
 ## Environment and execution
 
