@@ -15,6 +15,64 @@ Wasif Ahmed — ATML, Fall 2026 — Programming Assignment 1
 
 Each task folder contains its notebooks and Python files.
 
+## Directory structure
+
+```text
+PA1/
+├── README.md
+├── PYTHON_MODULES.md
+├── requirements.txt
+├── .gitignore
+├── notebook_manifest.json
+├── common/stages.py                 # shared experiment runner
+├── tools/verify_modules.py          # source-parity and syntax checks
+├── task1/
+│   ├── ATML_PA1_Task1*.ipynb
+│   ├── configs/                     # setup + pipeline.json
+│   ├── data/                        # subset, transforms, cue construction/review
+│   ├── models/backbones.py
+│   ├── train.py
+│   ├── analysis/                    # bias, similarity, representation analysis
+│   ├── scripts/run_task1.py
+│   ├── controlled/                  # separate Python stages for controlled variant
+│   └── results/README.md
+├── task2/
+│   ├── ATML_PA1_Task2.ipynb
+│   ├── configs/                     # setup, pipeline, Task 3 settings lock
+│   ├── data/pacs.py
+│   ├── models/backbone.py
+│   ├── methods/alignment.py
+│   ├── train.py
+│   ├── evaluate_final.py
+│   ├── evaluation/
+│   ├── scripts/run_task2.py
+│   └── results/README.md
+├── task3/
+│   ├── ATML_PA1_Task3.ipynb
+│   ├── configs/
+│   ├── data/pacs.py
+│   ├── train.py
+│   ├── selection/source_validation.py
+│   ├── evaluate_sketch.py
+│   ├── evaluation/
+│   ├── scripts/run_task3.py
+│   └── results/README.md
+├── task4/
+│   ├── ATML_PA1_Task4.ipynb
+│   ├── configs/
+│   ├── data/cifar10.py
+│   ├── models/resnet_cifar.py
+│   ├── train.py
+│   ├── extract_outputs.py
+│   ├── evaluate_osr.py
+│   ├── evaluation/
+│   ├── scripts/run_task4.py
+│   └── results/README.md
+└── report/
+    ├── How_Do_Visual_Models_Use_Cues__Adapt_to_Domain_Shift__Generalize__and_Reject_Unknowns_.pdf
+    └── figures/README.md
+```
+
 ## How to run
 
 1. Open a notebook in Google Colab and select a GPU runtime.
