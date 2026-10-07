@@ -49,6 +49,41 @@ def restore_rng(state):
     if torch.cuda.is_available() and state['cuda']: torch.cuda.set_rng_state_all(state['cuda'])
 
 
+
+def recoverable_update(optimizer, scaler, params, backward_window, max_grad_norm, max_retries=16):
+    """Replay one accumulation window after FP16 overflow, without skipping data.
+
+    Restoring RNG also reproduces dropout. Only a finite-gradient attempt may
+    update parameters. Loss scaling is numerical bookkeeping, not a course
+    optimizer/hyperparameter change.
+    """
+    rng = capture_rng()
+    for retries in range(max_retries + 1):
+        if retries:
+            restore_rng(rng)
+        optimizer.zero_grad(set_to_none=True)
+        diagnostics = backward_window()
+        scaler.unscale_(optimizer)
+        norm = torch.nn.utils.clip_grad_norm_(params, float(max_grad_norm))
+        if torch.isfinite(norm):
+            scale_used = float(scaler.get_scale())
+            scaler.step(optimizer)
+            scaler.update()
+            optimizer.zero_grad(set_to_none=True)
+            return diagnostics, norm, retries, scale_used
+        if not scaler.is_enabled():
+            raise FloatingPointError('Non-finite DPO gradient without FP16 loss scaling')
+        old_scale = float(scaler.get_scale())
+        # No optimizer step: discard overflowed gradients and reset scaler state.
+        scaler.update(new_scale=old_scale * float(scaler.get_backoff_factor()))
+        optimizer.zero_grad(set_to_none=True)
+        print(f'FP16 gradient overflow: retrying the SAME accumulation window; '
+              f'loss scale {old_scale:g} -> {scaler.get_scale():g}', flush=True)
+    raise FloatingPointError(
+        f'Non-finite DPO gradient persisted after {max_retries} retries; '
+        'no examples were skipped and no invalid update was applied')
+
+
 def save_checkpoint(model, optimizer, scaler, output, state):
     tmp = output / 'last_checkpoint.new'; dst = output / 'last_checkpoint'
     shutil.rmtree(tmp, ignore_errors=True); tmp.mkdir(parents=True)
@@ -138,6 +173,9 @@ def run_training(config_path='configs/dpo.yaml', run_name='standard', dataset_pa
     if torch.cuda.is_available(): torch.cuda.reset_peak_memory_stats()
     accum=int(cfg['grad_accum_steps']); batch_size=int(cfg['batch_size'])
     optimizer.zero_grad(set_to_none=True)
+    if state is None:
+        save_checkpoint(model,optimizer,scaler,output,dict(signature=signature,step=0,
+                        epoch=0,next_batch=0,elapsed_seconds=time.perf_counter()-start))
     for epoch in range(next_epoch, int(cfg['epochs'])):
         gen=torch.Generator().manual_seed(int(cfg['seed'])+epoch)
         order=torch.randperm(len(rows),generator=gen).tolist()
@@ -147,30 +185,31 @@ def run_training(config_path='configs/dpo.yaml', run_name='standard', dataset_pa
         for group_start in tqdm(range(first,len(batches),accum),desc=f'{run_name}: epoch {epoch+1}'):
             group=batches[group_start:group_start+accum]
             n=sum(len(indices) for indices in group)
-            aggregates={'loss':0.0,'preference_accuracy':0.0,'preference_margin_mean':0.0}
-            for indices in group:
-                chosen,rejected=collate([rows[i] for i in indices])
-                chosen=to_device(chosen,model); rejected=to_device(rejected,model)
-                # Evaluate and release reference activations before constructing policy graphs.
-                with torch.no_grad(), reference_mode(model):
-                    rc=sequence_logprobs(model,chosen)[0]; rr=sequence_logprobs(model,rejected)[0]
-                pc=sequence_logprobs(model,chosen)[0]; pr=sequence_logprobs(model,rejected)[0]
-                loss,diag=dpo_loss(pc,pr,rc,rr,beta)
-                if not torch.isfinite(loss): raise FloatingPointError('Non-finite DPO loss')
-                weight=len(indices)/n  # Correctly handles final partial batches/windows.
-                scaler.scale(loss*weight).backward()
-                aggregates['loss']+=float(loss.detach())*weight
-                for key in ('preference_accuracy','preference_margin_mean'):
-                    aggregates[key]+=float(diag[key])*weight
-                del chosen,rejected,rc,rr,pc,pr,loss,diag
-            scaler.unscale_(optimizer)
-            norm=torch.nn.utils.clip_grad_norm_(params,float(cfg['max_grad_norm']))
-            if not torch.isfinite(norm): raise FloatingPointError('Non-finite DPO gradient')
-            scaler.step(optimizer); scaler.update(); optimizer.zero_grad(set_to_none=True)
+            def backward_window():
+                aggregates={'loss':0.0,'preference_accuracy':0.0,'preference_margin_mean':0.0}
+                for indices in group:
+                    chosen,rejected=collate([rows[i] for i in indices])
+                    chosen=to_device(chosen,model); rejected=to_device(rejected,model)
+                    # Evaluate and release reference activations before constructing policy graphs.
+                    with torch.no_grad(), reference_mode(model):
+                        rc=sequence_logprobs(model,chosen)[0]; rr=sequence_logprobs(model,rejected)[0]
+                    pc=sequence_logprobs(model,chosen)[0]; pr=sequence_logprobs(model,rejected)[0]
+                    loss,diag=dpo_loss(pc,pr,rc,rr,beta)
+                    if not torch.isfinite(loss): raise FloatingPointError('Non-finite DPO loss')
+                    weight=len(indices)/n  # Correctly handles final partial batches/windows.
+                    scaler.scale(loss*weight).backward()
+                    aggregates['loss']+=float(loss.detach())*weight
+                    for key in ('preference_accuracy','preference_margin_mean'):
+                        aggregates[key]+=float(diag[key])*weight
+                    del chosen,rejected,rc,rr,pc,pr,loss,diag
+                return aggregates
+            aggregates,norm,overflow_retries,loss_scale = recoverable_update(
+                optimizer,scaler,params,backward_window,cfg['max_grad_norm'])
             step+=1; stop=group_start+len(group)
             record={'optimizer_step':step,'epoch':epoch+1,'next_batch':stop,
                     'examples_in_update':n,'learning_rate':float(cfg['learning_rate']),
                     'gradient_norm_before_clipping':float(norm),
+                    'fp16_overflow_retries':overflow_retries,'loss_scale_used':loss_scale,
                     'elapsed_seconds':elapsed_before+time.perf_counter()-start,**aggregates}
             append_record(results/'training_log.jsonl',record)
             if step % 20 == 0 or stop == micro_count or smoke:
