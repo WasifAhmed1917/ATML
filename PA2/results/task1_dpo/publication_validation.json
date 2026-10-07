@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-07T21:29:10.244645+00:00",
+  "scope": "Static review before publication; user requested immediate push while test dependencies were downloading",
+  "python_files_parsed": 51,
+  "notebook_code_cells_compiled": 11,
+  "cpu_test_suite": "not rerun in this session; dependency installation still pending when user requested immediate push",
+  "notebook_schema_validation": "not rerun; JSON read and all code cells compiled",
+  "full_model_gpu_smoke_test": "pending in Colab",
+  "full_training_and_evaluation": "pending in Colab",
+  "fixed_course_data_validation": "historical ZIP manifests retained; not independently rerun here",
+  "requirements_audit": "PA2/TASK1_REQUIREMENTS.md",
+  "large_files_or_model_weights_in_upload": false
+}

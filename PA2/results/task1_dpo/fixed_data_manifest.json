@@ -1,0 +1,139 @@
+{
+  "beta_first_600": {
+    "n": 600,
+    "overlength_pairs": 109,
+    "prompt_alone_overflow": 19,
+    "prompt_truncated_pairs": 109,
+    "response_truncated_pairs": 42,
+    "max_prompt_tokens": 3563,
+    "max_original_sequence_tokens": 4002
+  },
+  "dpo_standard_train": {
+    "n": 1500,
+    "sha256": "8a0e52eb0927b261b35dab887f8f49f5d81bc666adb4621a91481ded277a3c42",
+    "course_hash_verified": true,
+    "strata": {
+      "None": 1500
+    },
+    "overlength_pairs": 286,
+    "prompt_alone_overflow": 54,
+    "prompt_truncated_pairs": 286,
+    "response_truncated_pairs": 98,
+    "max_prompt_tokens": 3563,
+    "max_original_sequence_tokens": 4002,
+    "truncation_by_stratum": {}
+  },
+  "dpo_standard_eval": {
+    "n": 300,
+    "sha256": "c1f9e7c7e140b4671efd67173a4434946780cf04232aabc03ef317ae621e5079",
+    "course_hash_verified": true,
+    "strata": {
+      "None": 300
+    },
+    "overlength_pairs": 60,
+    "prompt_alone_overflow": 10,
+    "prompt_truncated_pairs": 60,
+    "response_truncated_pairs": 21,
+    "max_prompt_tokens": 1861,
+    "max_original_sequence_tokens": 3080,
+    "truncation_by_stratum": {}
+  },
+  "dpo_length_train": {
+    "n": 1500,
+    "sha256": "15e1126ef1befe35d1011a713d223ed28044f3cb0ab8cbe4acecc033fdbd9bbf",
+    "course_hash_verified": true,
+    "strata": {
+      "rejected_longer": 500,
+      "preferred_longer": 500,
+      "length_matched": 500
+    },
+    "overlength_pairs": 100,
+    "prompt_alone_overflow": 58,
+    "prompt_truncated_pairs": 100,
+    "response_truncated_pairs": 0,
+    "max_prompt_tokens": 1809,
+    "max_original_sequence_tokens": 2191,
+    "truncation_by_stratum": {
+      "length_matched": {
+        "n": 500,
+        "overlength_pairs": 28,
+        "prompt_alone_overflow": 18,
+        "prompt_truncated_pairs": 28,
+        "response_truncated_pairs": 0,
+        "max_prompt_tokens": 1709,
+        "max_original_sequence_tokens": 2043
+      },
+      "preferred_longer": {
+        "n": 500,
+        "overlength_pairs": 38,
+        "prompt_alone_overflow": 22,
+        "prompt_truncated_pairs": 38,
+        "response_truncated_pairs": 0,
+        "max_prompt_tokens": 1809,
+        "max_original_sequence_tokens": 2191
+      },
+      "rejected_longer": {
+        "n": 500,
+        "overlength_pairs": 34,
+        "prompt_alone_overflow": 18,
+        "prompt_truncated_pairs": 34,
+        "response_truncated_pairs": 0,
+        "max_prompt_tokens": 1464,
+        "max_original_sequence_tokens": 1550
+      }
+    }
+  },
+  "dpo_length_eval": {
+    "n": 246,
+    "sha256": "89e2c56ee2fdaec75fcf1f56ae4802d710ed4ad08f127e097990923017ca7405",
+    "course_hash_verified": true,
+    "strata": {
+      "rejected_longer": 82,
+      "preferred_longer": 82,
+      "length_matched": 82
+    },
+    "overlength_pairs": 16,
+    "prompt_alone_overflow": 9,
+    "prompt_truncated_pairs": 16,
+    "response_truncated_pairs": 0,
+    "max_prompt_tokens": 1109,
+    "max_original_sequence_tokens": 1440,
+    "truncation_by_stratum": {
+      "length_matched": {
+        "n": 82,
+        "overlength_pairs": 2,
+        "prompt_alone_overflow": 2,
+        "prompt_truncated_pairs": 2,
+        "response_truncated_pairs": 0,
+        "max_prompt_tokens": 1107,
+        "max_original_sequence_tokens": 1238
+      },
+      "preferred_longer": {
+        "n": 82,
+        "overlength_pairs": 8,
+        "prompt_alone_overflow": 4,
+        "prompt_truncated_pairs": 8,
+        "response_truncated_pairs": 0,
+        "max_prompt_tokens": 1109,
+        "max_original_sequence_tokens": 1440
+      },
+      "rejected_longer": {
+        "n": 82,
+        "overlength_pairs": 6,
+        "prompt_alone_overflow": 3,
+        "prompt_truncated_pairs": 6,
+        "response_truncated_pairs": 0,
+        "max_prompt_tokens": 1050,
+        "max_original_sequence_tokens": 1424
+      }
+    }
+  },
+  "word_limit_prompts": {
+    "n": 10,
+    "sha256": "4252fb01e078eaa835f9d4b3d6abaaba8033fe68e30dfa2d17c4d6886dd2ea49",
+    "course_hash_verified": false,
+    "strata": {
+      "None": 10
+    }
+  }
+}

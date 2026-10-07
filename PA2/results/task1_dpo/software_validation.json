@@ -1,0 +1,19 @@
+{
+  "validation_scope": "CPU software fixtures and actual Qwen tokenizer over fixed Task 1 data; no full-model GPU experiments",
+  "unit_and_integration_tests_passed": 10,
+  "notebook_schema_valid": true,
+  "notebook_code_cells_compile": true,
+  "task1_data_hashes_counts_and_ids_valid": true,
+  "preprocessing": "response_priority_shared_prompt_tail_v1",
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "peft": "0.17.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "full_model_gpu_smoke_test": "pending in Colab",
+  "full_training_and_evaluation": "pending in Colab",
+  "numeric_plot_rendering_from_fixtures_valid": true
+}
