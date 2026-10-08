@@ -1,0 +1,26 @@
+{
+  "status": "cpu_software_validation_passed",
+  "tests_passed": 18,
+  "task2_tests_passed": 8,
+  "full_size_gpu_experiments_run": false,
+  "full_size_gpu_smoke_run": false,
+  "cached_rollouts_checked": 32,
+  "cached_response_token_counts_exactly_reconstructed": true,
+  "released_training_prompts": 1200,
+  "released_evaluation_prompts": 200,
+  "checks": [
+    "positive and negative advantage clipping and masked gradients",
+    "terminal KL-shaped reward and variable-length GAE",
+    "real tiny Qwen2 plus PEFT actor and critic optimization",
+    "pre-action token/value alignment",
+    "actor/critic optimizer checkpoint restoration matches uninterrupted update",
+    "joint AMP overflow retries without a partial actor or critic step",
+    "FP16 base with FP32 trainable critic head",
+    "interrupted final adapter save resumes without replaying a committed update",
+    "export rejects incorrect update budgets and preserves manual notes",
+    "existing Task 1 regression suite",
+    "notebook code cells compile"
+  ],
+  "asset_revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "gpu_validation_next_step": "Run the Task 2 notebook's GPU smoke cell before full experiments."
+}

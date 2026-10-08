@@ -9,3 +9,12 @@ This repositroy includes implementation and reports of the graduate course offer
 
 The Task 1 DPO pipeline is implemented. Full GPU experiments, resulting logs and
 metrics, qualitative review, and the report are still pending. This upload contains Task 1 and its shared course infrastructure.
+
+## Programming Assignment 2 — Task 2
+
+[Task 2 implementation and reproduction commands](PA2/README.md#task-2--ppo-continuation) ·
+[Task 2 requirements](PA2/TASK2_REQUIREMENTS.md) ·
+[Run Task 2 in Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA2/notebooks/ATML_PA2_T2.ipynb)
+
+PPO continuation, clipping and KL studies are supplied. Full-size GPU smoke tests
+and experiments remain pending, as recorded in the supplied validation metadata.

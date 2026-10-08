@@ -195,3 +195,33 @@ Model is Secretly a Reward Model* (2023), https://arxiv.org/abs/2305.18290.
 See [TASK1_REQUIREMENTS.md](TASK1_REQUIREMENTS.md) for the implementation mapping,
 validation scope, and remaining experimental evidence. This upload is code-ready,
 not a completed experimental submission.
+
+## Task 2 — PPO continuation
+
+Task 2 is implemented independently of the completed Task 1. Open
+[the Task 2 Colab notebook](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA2/notebooks/ATML_PA2_T2.ipynb)
+in an A100 GPU runtime. Its helper streams tqdm and saves logs on Drive.
+
+Run setup, asset validation, objective tests and the isolated GPU smoke test, then
+`standard`, `clipping`, `kl`, and `export` in order. Every stage accepts `--resume`;
+completed training is skipped and evaluation resumes after the last saved response.
+After a runtime reset, restore setup and assets before resuming an unfinished stage.
+Keep the same code/configuration for partial runs. Do not run two copies of the same
+stage concurrently.
+
+```bash
+python -m task2_ppo.run_all --stage standard --resume
+python -m task2_ppo.run_all --stage clipping --resume
+python -m task2_ppo.run_all --stage kl --resume
+python -m task2_ppo.run_all --stage export --resume
+```
+
+See [TASK2_REQUIREMENTS.md](TASK2_REQUIREMENTS.md) for exact release settings,
+probability/advantage conventions, and validation scope. Artifacts use
+`PA2_ARTIFACT_ROOT` (the notebook sets `/content/drive/MyDrive/PA2`). The standard
+adapter is at `outputs/task2_ppo/standard`; the critic continuation adapter is its
+`critic_adapter` subdirectory. Tensor checkpoints retain the exact merged critic
+origin rather than requiring a new critic initialization. Results are under
+`results/task2_ppo`: fixed held-out generations, numeric summaries, cached clipping
+geometry, trajectories, figures and `qualitative_review.jsonl` for manual review.
+Task 2 reads the course assets; it does not modify Task 1 results or code.
