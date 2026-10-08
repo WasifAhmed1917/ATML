@@ -225,3 +225,16 @@ origin rather than requiring a new critic initialization. Results are under
 `results/task2_ppo`: fixed held-out generations, numeric summaries, cached clipping
 geometry, trajectories, figures and `qualitative_review.jsonl` for manual review.
 Task 2 reads the course assets; it does not modify Task 1 results or code.
+
+
+## Task 3: GRPO
+
+Open `notebooks/ATML_PA2_T3.ipynb` in Colab with an A100 GPU and run cells in order. It resumes per-update training and per-prompt evaluation from `MyDrive/PA2`, streams live progress, and keeps smoke artifacts separate. The standard 20-update continuation, equal-generation cached K study, and two matched eight-update normalization forks are implemented.
+
+```bash
+python -m task3_grpo.validate_data
+python -m unittest discover -s tests -p 'test_task3*.py' -v
+python -m task3_grpo.run_all --stage all --resume
+```
+
+Read `TASK3_REQUIREMENTS.md` for the objective fix, exact configuration, cache regrouping/difficulty-bin rule, truncation mask, and the scope of the supplied Dr.GRPO-style variant. Code and local integration checks are complete; GPU experiment results are produced when you run the notebook.

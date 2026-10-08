@@ -1,0 +1,3531 @@
+{
+  "partition": "all eight completions per prompt, ordered by generation_index, consecutive disjoint groups of K",
+  "difficulty_definition": "median rank of fixed full-eight cached mean learned reward; proxy, not ground-truth difficulty",
+  "informative_threshold": 1e-06,
+  "difficulty_assignments": [
+    {
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": -1.45556640625
+    },
+    {
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": -1.42041015625
+    },
+    {
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": -0.85198974609375
+    },
+    {
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": -0.1944580078125
+    },
+    {
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 0.73388671875
+    },
+    {
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 0.7420654296875
+    },
+    {
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 0.8939208984375
+    },
+    {
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 1.2734375
+    },
+    {
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 1.3321533203125
+    },
+    {
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 1.81658935546875
+    },
+    {
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 1.86572265625
+    },
+    {
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "cached_mean_reward": 2.1845703125
+    },
+    {
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.212890625
+    },
+    {
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.2646484375
+    },
+    {
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.375
+    },
+    {
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.4169921875
+    },
+    {
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.4296875
+    },
+    {
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.4599609375
+    },
+    {
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.65625
+    },
+    {
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.6875
+    },
+    {
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 2.966796875
+    },
+    {
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 3.00390625
+    },
+    {
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 3.072265625
+    },
+    {
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "cached_mean_reward": 3.220703125
+    }
+  ],
+  "summary": [
+    {
+      "k": 2,
+      "difficulty_bin": "all",
+      "n_groups": 96,
+      "n_prompts": 24,
+      "total_generations": 192,
+      "informative_group_rate": 0.9375,
+      "group_reward_std_mean": 0.3845672607421875,
+      "group_reward_std_std": 0.4346756272629393,
+      "group_relative_signal_variance_mean": 0.9374814173564773,
+      "centered_reward_variance_mean": 0.3368348789711793,
+      "effective_informative_group_rate": 0.8229166666666666,
+      "eligible_completion_fraction": 0.8489583333333334,
+      "masked_advantage_second_moment_mean": 0.7864435312643038
+    },
+    {
+      "k": 2,
+      "difficulty_bin": "lower_reward",
+      "n_groups": 48,
+      "n_prompts": 12,
+      "total_generations": 96,
+      "informative_group_rate": 0.8958333333333334,
+      "group_reward_std_mean": 0.5283304850260416,
+      "group_reward_std_std": 0.5431086612864469,
+      "group_relative_signal_variance_mean": 0.8958263622728104,
+      "centered_reward_variance_mean": 0.574100119372209,
+      "effective_informative_group_rate": 0.6875,
+      "eligible_completion_fraction": 0.7395833333333334,
+      "masked_advantage_second_moment_mean": 0.6354115797934216
+    },
+    {
+      "k": 2,
+      "difficulty_bin": "higher_reward",
+      "n_groups": 48,
+      "n_prompts": 12,
+      "total_generations": 96,
+      "informative_group_rate": 0.9791666666666666,
+      "group_reward_std_mean": 0.24080403645833334,
+      "group_reward_std_std": 0.20391923547209423,
+      "group_relative_signal_variance_mean": 0.9791364724401442,
+      "centered_reward_variance_mean": 0.09956963857014973,
+      "effective_informative_group_rate": 0.9583333333333334,
+      "eligible_completion_fraction": 0.9583333333333334,
+      "masked_advantage_second_moment_mean": 0.937475482735186
+    },
+    {
+      "k": 4,
+      "difficulty_bin": "all",
+      "n_groups": 48,
+      "n_prompts": 24,
+      "total_generations": 192,
+      "informative_group_rate": 0.9583333333333334,
+      "group_reward_std_mean": 0.5410043647319412,
+      "group_reward_std_std": 0.4183782212043203,
+      "group_relative_signal_variance_mean": 0.9583276282884473,
+      "centered_reward_variance_mean": 0.4677260586371024,
+      "effective_informative_group_rate": 0.8958333333333334,
+      "eligible_completion_fraction": 0.8489583333333334,
+      "masked_advantage_second_moment_mean": 0.776494619609979
+    },
+    {
+      "k": 4,
+      "difficulty_bin": "lower_reward",
+      "n_groups": 24,
+      "n_prompts": 12,
+      "total_generations": 96,
+      "informative_group_rate": 0.9166666666666666,
+      "group_reward_std_mean": 0.711506330909153,
+      "group_reward_std_std": 0.5015806375131696,
+      "group_relative_signal_variance_mean": 0.9166630916976177,
+      "centered_reward_variance_mean": 0.757824394851923,
+      "effective_informative_group_rate": 0.7916666666666666,
+      "eligible_completion_fraction": 0.7395833333333334,
+      "masked_advantage_second_moment_mean": 0.6107558822154515
+    },
+    {
+      "k": 4,
+      "difficulty_bin": "higher_reward",
+      "n_groups": 24,
+      "n_prompts": 12,
+      "total_generations": 96,
+      "informative_group_rate": 1.0,
+      "group_reward_std_mean": 0.37050239855472933,
+      "group_reward_std_std": 0.20088726960032682,
+      "group_relative_signal_variance_mean": 0.9999921648792768,
+      "centered_reward_variance_mean": 0.1776277224222819,
+      "effective_informative_group_rate": 1.0,
+      "eligible_completion_fraction": 0.9583333333333334,
+      "masked_advantage_second_moment_mean": 0.9422333570045066
+    },
+    {
+      "k": 8,
+      "difficulty_bin": "all",
+      "n_groups": 24,
+      "n_prompts": 24,
+      "total_generations": 192,
+      "informative_group_rate": 0.9583333333333334,
+      "group_reward_std_mean": 0.6190544134665205,
+      "group_reward_std_std": 0.4203174716946816,
+      "group_relative_signal_variance_mean": 0.9583290996055105,
+      "centered_reward_variance_mean": 0.5598951438441873,
+      "effective_informative_group_rate": 0.9583333333333334,
+      "eligible_completion_fraction": 0.8489583333333334,
+      "masked_advantage_second_moment_mean": 0.7842344309701174
+    },
+    {
+      "k": 8,
+      "difficulty_bin": "lower_reward",
+      "n_groups": 12,
+      "n_prompts": 12,
+      "total_generations": 96,
+      "informative_group_rate": 0.9166666666666666,
+      "group_reward_std_mean": 0.8002487347571022,
+      "group_reward_std_std": 0.4613298802397272,
+      "group_relative_signal_variance_mean": 0.916664141013165,
+      "centered_reward_variance_mean": 0.8532232958823442,
+      "effective_informative_group_rate": 0.9166666666666666,
+      "eligible_completion_fraction": 0.7395833333333334,
+      "masked_advantage_second_moment_mean": 0.5946456128870713
+    },
+    {
+      "k": 8,
+      "difficulty_bin": "higher_reward",
+      "n_groups": 12,
+      "n_prompts": 12,
+      "total_generations": 96,
+      "informative_group_rate": 1.0,
+      "group_reward_std_mean": 0.43786009217593874,
+      "group_reward_std_std": 0.27357911376000305,
+      "group_relative_signal_variance_mean": 0.9999940581978564,
+      "centered_reward_variance_mean": 0.2665669918060303,
+      "effective_informative_group_rate": 1.0,
+      "eligible_completion_fraction": 0.9583333333333334,
+      "masked_advantage_second_moment_mean": 0.9738232490531633
+    }
+  ],
+  "groups": [
+    {
+      "k": 2,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.6796875,
+      "informative": true,
+      "centered_reward_variance": 0.46197509765625,
+      "advantage_variance": 0.999997057477758,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999997057477758
+    },
+    {
+      "k": 2,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 2.84765625,
+      "informative": true,
+      "centered_reward_variance": 8.109146118164062,
+      "advantage_variance": 0.9999992976684083,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.85546875,
+      "informative": true,
+      "centered_reward_variance": 0.7318267822265625,
+      "advantage_variance": 0.9999976621045559,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999976621045559
+    },
+    {
+      "k": 2,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 2.076171875,
+      "informative": true,
+      "centered_reward_variance": 4.310489654541016,
+      "advantage_variance": 0.999999036689313,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999999036689313
+    },
+    {
+      "k": 2,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.1328125,
+      "informative": true,
+      "centered_reward_variance": 0.01763916015625,
+      "advantage_variance": 0.999984941346545,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999984941346545
+    },
+    {
+      "k": 2,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.6171875,
+      "informative": true,
+      "centered_reward_variance": 0.38092041015625,
+      "advantage_variance": 0.9999967595015464,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999967595015464
+    },
+    {
+      "k": 2,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.1015625,
+      "informative": true,
+      "centered_reward_variance": 0.01031494140625,
+      "advantage_variance": 0.9999803079831441,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999803079831441
+    },
+    {
+      "k": 2,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0625,
+      "informative": true,
+      "centered_reward_variance": 0.00390625,
+      "advantage_variance": 0.9999680007679835,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999680007679835
+    },
+    {
+      "k": 2,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.0458984375,
+      "informative": true,
+      "centered_reward_variance": 0.0021066665649414062,
+      "advantage_variance": 0.9999564269559241,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999564269559241
+    },
+    {
+      "k": 2,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.5927734375,
+      "informative": true,
+      "centered_reward_variance": 0.3513803482055664,
+      "advantage_variance": 0.9999966260381916,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999966260381916
+    },
+    {
+      "k": 2,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.36669921875,
+      "informative": true,
+      "centered_reward_variance": 0.13446831703186035,
+      "advantage_variance": 0.9999945459610585,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999945459610585
+    },
+    {
+      "k": 2,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.87109375,
+      "informative": true,
+      "centered_reward_variance": 0.7588043212890625,
+      "advantage_variance": 0.999997704039828,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999997704039828
+    },
+    {
+      "k": 2,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.751953125,
+      "informative": true,
+      "centered_reward_variance": 0.5654335021972656,
+      "advantage_variance": 0.9999973402650459,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999973402650459
+    },
+    {
+      "k": 2,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.390625,
+      "informative": true,
+      "centered_reward_variance": 0.152587890625,
+      "advantage_variance": 0.9999948800196609,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999948800196609
+    },
+    {
+      "k": 2,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.46484375,
+      "informative": true,
+      "centered_reward_variance": 0.2160797119140625,
+      "advantage_variance": 0.9999956974928754,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999956974928754
+    },
+    {
+      "k": 2,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.484375,
+      "informative": true,
+      "centered_reward_variance": 0.234619140625,
+      "advantage_variance": 0.9999958709805287,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999958709805287
+    },
+    {
+      "k": 2,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.6875,
+      "informative": true,
+      "centered_reward_variance": 0.47265625,
+      "advantage_variance": 0.9999970909154379,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999970909154379
+    },
+    {
+      "k": 2,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.314453125,
+      "informative": true,
+      "centered_reward_variance": 0.09888076782226562,
+      "advantage_variance": 0.9999936397818924,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999936397818924
+    },
+    {
+      "k": 2,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.12890625,
+      "informative": true,
+      "centered_reward_variance": 0.0166168212890625,
+      "advantage_variance": 0.999984485029023,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999984485029023
+    },
+    {
+      "k": 2,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.77734375,
+      "informative": true,
+      "centered_reward_variance": 0.6042633056640625,
+      "advantage_variance": 0.9999974271406431,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999974271406431
+    },
+    {
+      "k": 2,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 1.2646484375,
+      "informative": true,
+      "centered_reward_variance": 1.5993356704711914,
+      "advantage_variance": 0.9999984185346944,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.08203125,
+      "informative": true,
+      "centered_reward_variance": 0.0067291259765625,
+      "advantage_variance": 0.9999756194934349,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.93017578125,
+      "informative": true,
+      "centered_reward_variance": 0.8652269840240479,
+      "advantage_variance": 0.9999978498722337,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.30078125,
+      "informative": true,
+      "centered_reward_variance": 0.0904693603515625,
+      "advantage_variance": 0.9999933506825112,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999933506825112
+    },
+    {
+      "k": 2,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.1875,
+      "informative": true,
+      "centered_reward_variance": 0.03515625,
+      "advantage_variance": 0.999989333418666,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999989333418666
+    },
+    {
+      "k": 2,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.0625,
+      "informative": true,
+      "centered_reward_variance": 0.00390625,
+      "advantage_variance": 0.9999680007679835,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999680007679835
+    },
+    {
+      "k": 2,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.1328125,
+      "informative": true,
+      "centered_reward_variance": 0.01763916015625,
+      "advantage_variance": 0.999984941346545,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999984941346545
+    },
+    {
+      "k": 2,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0546875,
+      "informative": true,
+      "centered_reward_variance": 0.00299072265625,
+      "advantage_variance": 0.999963429574506,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999963429574506
+    },
+    {
+      "k": 2,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.2783203125,
+      "informative": true,
+      "centered_reward_variance": 0.07746219635009766,
+      "advantage_variance": 0.9999928140738163,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999928140738163
+    },
+    {
+      "k": 2,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.09765625,
+      "informative": true,
+      "centered_reward_variance": 0.0095367431640625,
+      "advantage_variance": 0.9999795203145685,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999795203145685
+    },
+    {
+      "k": 2,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.2109375,
+      "informative": true,
+      "centered_reward_variance": 0.04449462890625,
+      "advantage_variance": 0.9999905185859418,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999905185859418
+    },
+    {
+      "k": 2,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.677001953125,
+      "informative": true,
+      "centered_reward_variance": 0.4583316445350647,
+      "advantage_variance": 0.9999970458053193,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999970458053193
+    },
+    {
+      "k": 2,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.21484375,
+      "informative": true,
+      "centered_reward_variance": 0.0461578369140625,
+      "advantage_variance": 0.9999906909740849,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999906909740849
+    },
+    {
+      "k": 2,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.08984375,
+      "informative": true,
+      "centered_reward_variance": 0.0080718994140625,
+      "advantage_variance": 0.999977739502089,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999977739502089
+    },
+    {
+      "k": 2,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.201171875,
+      "informative": true,
+      "centered_reward_variance": 0.040470123291015625,
+      "advantage_variance": 0.9999900583265555,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999900583265555
+    },
+    {
+      "k": 2,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 2,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.1640625,
+      "informative": true,
+      "centered_reward_variance": 0.02691650390625,
+      "advantage_variance": 0.9999878096352645,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999878096352645
+    },
+    {
+      "k": 2,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.1796875,
+      "informative": true,
+      "centered_reward_variance": 0.03228759765625,
+      "advantage_variance": 0.9999888696581317,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999888696581317
+    },
+    {
+      "k": 2,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.1015625,
+      "informative": true,
+      "centered_reward_variance": 0.01031494140625,
+      "advantage_variance": 0.9999803079831441,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999803079831441
+    },
+    {
+      "k": 2,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0703125,
+      "informative": true,
+      "centered_reward_variance": 0.00494384765625,
+      "advantage_variance": 0.9999715561623589,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999715561623589
+    },
+    {
+      "k": 2,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.1015625,
+      "informative": true,
+      "centered_reward_variance": 0.01031494140625,
+      "advantage_variance": 0.9999803079831441,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999803079831441
+    },
+    {
+      "k": 2,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.0078125,
+      "informative": true,
+      "centered_reward_variance": 6.103515625e-05,
+      "advantage_variance": 0.999744049143613,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999744049143613
+    },
+    {
+      "k": 2,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.33984375,
+      "informative": true,
+      "centered_reward_variance": 0.1154937744140625,
+      "advantage_variance": 0.9999941149685041,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999941149685041
+    },
+    {
+      "k": 2,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.2421875,
+      "informative": true,
+      "centered_reward_variance": 0.05865478515625,
+      "advantage_variance": 0.9999917419866304,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999917419866304
+    },
+    {
+      "k": 2,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.3046875,
+      "informative": true,
+      "centered_reward_variance": 0.09283447265625,
+      "advantage_variance": 0.9999934359297515,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999934359297515
+    },
+    {
+      "k": 2,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.046875,
+      "informative": true,
+      "centered_reward_variance": 0.002197265625,
+      "advantage_variance": 0.9999573346986279,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999573346986279
+    },
+    {
+      "k": 2,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 2,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.35546875,
+      "informative": true,
+      "centered_reward_variance": 0.1263580322265625,
+      "advantage_variance": 0.9999943736501157,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999943736501157
+    },
+    {
+      "k": 2,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.171875,
+      "informative": true,
+      "centered_reward_variance": 0.029541015625,
+      "advantage_variance": 0.9999883637379164,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999883637379164
+    },
+    {
+      "k": 2,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.1328125,
+      "informative": true,
+      "centered_reward_variance": 0.01763916015625,
+      "advantage_variance": 0.999984941346545,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999984941346545
+    },
+    {
+      "k": 2,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.3125,
+      "informative": true,
+      "centered_reward_variance": 0.09765625,
+      "advantage_variance": 0.99999360003072,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.99999360003072
+    },
+    {
+      "k": 2,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.1875,
+      "informative": true,
+      "centered_reward_variance": 0.03515625,
+      "advantage_variance": 0.999989333418666,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999989333418666
+    },
+    {
+      "k": 2,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.00390625,
+      "informative": true,
+      "centered_reward_variance": 1.52587890625e-05,
+      "advantage_variance": 0.9994881965409125,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.49974409827045624
+    },
+    {
+      "k": 2,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.140625,
+      "informative": true,
+      "centered_reward_variance": 0.019775390625,
+      "advantage_variance": 0.99998577792948,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.234375,
+      "informative": true,
+      "centered_reward_variance": 0.054931640625,
+      "advantage_variance": 0.9999914667212797,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999914667212797
+    },
+    {
+      "k": 2,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.421875,
+      "informative": true,
+      "centered_reward_variance": 0.177978515625,
+      "advantage_variance": 0.9999952592761152,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.4999976296380576
+    },
+    {
+      "k": 2,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 2,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 2,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 2,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 2,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.1796875,
+      "informative": true,
+      "centered_reward_variance": 0.03228759765625,
+      "advantage_variance": 0.9999888696581317,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.125,
+      "informative": true,
+      "centered_reward_variance": 0.015625,
+      "advantage_variance": 0.999984000191998,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.499992000095999
+    },
+    {
+      "k": 2,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.109375,
+      "informative": true,
+      "centered_reward_variance": 0.011962890625,
+      "advantage_variance": 0.9999817145364868,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.70703125,
+      "informative": true,
+      "centered_reward_variance": 0.4998931884765625,
+      "advantage_variance": 0.9999971712767195,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.34765625,
+      "informative": true,
+      "centered_reward_variance": 0.1208648681640625,
+      "advantage_variance": 0.9999942472158323,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999942472158323
+    },
+    {
+      "k": 2,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 1.103515625,
+      "informative": true,
+      "centered_reward_variance": 1.2177467346191406,
+      "advantage_variance": 0.9999981876130831,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.49999909380654156
+    },
+    {
+      "k": 2,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.984375,
+      "informative": true,
+      "centered_reward_variance": 0.968994140625,
+      "advantage_variance": 0.9999979682570642,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.4999989841285321
+    },
+    {
+      "k": 2,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 1.344970703125,
+      "informative": true,
+      "centered_reward_variance": 1.8089461922645569,
+      "advantage_variance": 0.9999985129804206,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.4999992564902103
+    },
+    {
+      "k": 2,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.8203125,
+      "informative": true,
+      "centered_reward_variance": 0.67291259765625,
+      "advantage_variance": 0.99999756190922,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.99999756190922
+    },
+    {
+      "k": 2,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.4375,
+      "informative": true,
+      "centered_reward_variance": 0.19140625,
+      "advantage_variance": 0.9999954285871022,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999954285871022
+    },
+    {
+      "k": 2,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.828125,
+      "informative": true,
+      "centered_reward_variance": 0.685791015625,
+      "advantage_variance": 0.9999975849100349,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999975849100349
+    },
+    {
+      "k": 2,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.03125,
+      "informative": true,
+      "centered_reward_variance": 0.0009765625,
+      "advantage_variance": 0.9999360030718689,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999360030718689
+    },
+    {
+      "k": 2,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.42578125,
+      "informative": true,
+      "centered_reward_variance": 0.1812896728515625,
+      "advantage_variance": 0.9999953027688417,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999953027688417
+    },
+    {
+      "k": 2,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.09375,
+      "informative": true,
+      "centered_reward_variance": 0.0087890625,
+      "advantage_variance": 0.9999786670079952,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999786670079952
+    },
+    {
+      "k": 2,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.41796875,
+      "informative": true,
+      "centered_reward_variance": 0.1746978759765625,
+      "advantage_variance": 0.9999952149704436,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999952149704436
+    },
+    {
+      "k": 2,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.375,
+      "informative": true,
+      "centered_reward_variance": 0.140625,
+      "advantage_variance": 0.9999946666880001,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999946666880001
+    },
+    {
+      "k": 2,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.4296875,
+      "informative": true,
+      "centered_reward_variance": 0.18463134765625,
+      "advantage_variance": 0.9999953454707943,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999953454707943
+    },
+    {
+      "k": 2,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.078125,
+      "informative": true,
+      "centered_reward_variance": 0.006103515625,
+      "advantage_variance": 0.9999744004915117,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999744004915117
+    },
+    {
+      "k": 2,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.203125,
+      "informative": true,
+      "centered_reward_variance": 0.041259765625,
+      "advantage_variance": 0.9999901539188635,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999901539188635
+    },
+    {
+      "k": 2,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0546875,
+      "informative": true,
+      "centered_reward_variance": 0.00299072265625,
+      "advantage_variance": 0.999963429574506,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999963429574506
+    },
+    {
+      "k": 2,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.2646484375,
+      "informative": true,
+      "centered_reward_variance": 0.0700387954711914,
+      "advantage_variance": 0.9999924428472615,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999924428472615
+    },
+    {
+      "k": 2,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.43359375,
+      "informative": true,
+      "centered_reward_variance": 0.1880035400390625,
+      "advantage_variance": 0.9999953874033447,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999953874033447
+    },
+    {
+      "k": 2,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.72705078125,
+      "informative": true,
+      "centered_reward_variance": 0.5286028385162354,
+      "advantage_variance": 0.9999972491661857,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999972491661857
+    },
+    {
+      "k": 2,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.10546875,
+      "informative": true,
+      "centered_reward_variance": 0.0111236572265625,
+      "advantage_variance": 0.999981037306729,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999981037306729
+    },
+    {
+      "k": 2,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.48828125,
+      "informative": true,
+      "centered_reward_variance": 0.2384185791015625,
+      "advantage_variance": 0.9999959040125831,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999959040125831
+    },
+    {
+      "k": 2,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.5703125,
+      "informative": true,
+      "centered_reward_variance": 0.32525634765625,
+      "advantage_variance": 0.9999964931599085,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999964931599085
+    },
+    {
+      "k": 2,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.140625,
+      "informative": true,
+      "centered_reward_variance": 0.019775390625,
+      "advantage_variance": 0.99998577792948,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.99998577792948
+    },
+    {
+      "k": 2,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.33203125,
+      "informative": true,
+      "centered_reward_variance": 0.1102447509765625,
+      "advantage_variance": 0.9999939764978004,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999939764978004
+    },
+    {
+      "k": 2,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.5859375,
+      "informative": true,
+      "centered_reward_variance": 0.34332275390625,
+      "advantage_variance": 0.9999965866754047,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999965866754047
+    },
+    {
+      "k": 2,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.0859375,
+      "informative": true,
+      "centered_reward_variance": 0.00738525390625,
+      "advantage_variance": 0.9999767276789359,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999767276789359
+    },
+    {
+      "k": 2,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.234375,
+      "informative": true,
+      "centered_reward_variance": 0.054931640625,
+      "advantage_variance": 0.9999914667212797,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999914667212797
+    },
+    {
+      "k": 2,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.0546875,
+      "informative": true,
+      "centered_reward_variance": 0.00299072265625,
+      "advantage_variance": 0.999963429574506,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999963429574506
+    },
+    {
+      "k": 2,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 2,
+      "generation_indices": [
+        0,
+        1
+      ],
+      "reward_std": 0.28515625,
+      "informative": true,
+      "centered_reward_variance": 0.0813140869140625,
+      "advantage_variance": 0.999992986338264,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 2,
+      "generation_indices": [
+        2,
+        3
+      ],
+      "reward_std": 0.24658203125,
+      "informative": true,
+      "centered_reward_variance": 0.06080269813537598,
+      "advantage_variance": 0.9999918891582505,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 2,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 2,
+      "n_generations": 2,
+      "generation_indices": [
+        4,
+        5
+      ],
+      "reward_std": 0.9111328125,
+      "informative": true,
+      "centered_reward_variance": 0.8301630020141602,
+      "advantage_variance": 0.999997804933946,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.499998902466973
+    },
+    {
+      "k": 2,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 3,
+      "n_generations": 2,
+      "generation_indices": [
+        6,
+        7
+      ],
+      "reward_std": 0.8017578125,
+      "informative": true,
+      "centered_reward_variance": 0.6428155899047852,
+      "advantage_variance": 0.9999975054857875,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 4,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 2.2406991943673904,
+      "informative": true,
+      "centered_reward_variance": 5.020732879638672,
+      "advantage_variance": 0.9999991074220642,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.11922027416479417
+    },
+    {
+      "k": 4,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.59616892633394,
+      "informative": true,
+      "centered_reward_variance": 2.547755241394043,
+      "advantage_variance": 0.9999987470009675,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999987470009675
+    },
+    {
+      "k": 4,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.5006099794875248,
+      "informative": true,
+      "centered_reward_variance": 0.2506103515625,
+      "advantage_variance": 0.9999960048858604,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999960048858604
+    },
+    {
+      "k": 4,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.08655671799281382,
+      "informative": true,
+      "centered_reward_variance": 0.0074920654296875,
+      "advantage_variance": 0.9999768941638782,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999768941638782
+    },
+    {
+      "k": 4,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.505268945368029,
+      "informative": true,
+      "centered_reward_variance": 0.2552967071533203,
+      "advantage_variance": 0.9999960417237573,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999960417237572
+    },
+    {
+      "k": 4,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.6702536159163152,
+      "informative": true,
+      "centered_reward_variance": 0.44923990964889526,
+      "advantage_variance": 0.9999970160615672,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999970160615672
+    },
+    {
+      "k": 4,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.7094516527882946,
+      "informative": true,
+      "centered_reward_variance": 0.503321647644043,
+      "advantage_variance": 0.9999971809273211,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999971809273211
+    },
+    {
+      "k": 4,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.5042051862813858,
+      "informative": true,
+      "centered_reward_variance": 0.2542228698730469,
+      "advantage_variance": 0.9999960333727127,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999960333727127
+    },
+    {
+      "k": 4,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.6167631984453539,
+      "informative": true,
+      "centered_reward_variance": 0.38039684295654297,
+      "advantage_variance": 0.9999967572722545,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999967572722545
+    },
+    {
+      "k": 4,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.5701787086218013,
+      "informative": true,
+      "centered_reward_variance": 0.325103759765625,
+      "advantage_variance": 0.999996492337037,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999996492337037
+    },
+    {
+      "k": 4,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.9237221784105724,
+      "informative": true,
+      "centered_reward_variance": 0.8532626628875732,
+      "advantage_variance": 0.9999978348503488,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 4,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.8779580320677265,
+      "informative": true,
+      "centered_reward_variance": 0.7708103060722351,
+      "advantage_variance": 0.9999977219906762,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.2487191840553446
+    },
+    {
+      "k": 4,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.2155174097520894,
+      "informative": true,
+      "centered_reward_variance": 0.04644775390625,
+      "advantage_variance": 0.9999907200718383,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999907200718383
+    },
+    {
+      "k": 4,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.10881553341550093,
+      "informative": true,
+      "centered_reward_variance": 0.0118408203125,
+      "advantage_variance": 0.9999816205244972,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999816205244972
+    },
+    {
+      "k": 4,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.2187341956832677,
+      "informative": true,
+      "centered_reward_variance": 0.047844648361206055,
+      "advantage_variance": 0.9999908565449561,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999908565449561
+    },
+    {
+      "k": 4,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.5704810925383759,
+      "informative": true,
+      "centered_reward_variance": 0.325448676943779,
+      "advantage_variance": 0.9999964941962715,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999964941962715
+    },
+    {
+      "k": 4,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.18574208481201157,
+      "informative": true,
+      "centered_reward_variance": 0.0345001220703125,
+      "advantage_variance": 0.9999892324679638,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999892324679638
+    },
+    {
+      "k": 4,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.1500827561020893,
+      "informative": true,
+      "centered_reward_variance": 0.02252483367919922,
+      "advantage_variance": 0.9999866741518932,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999866741518932
+    },
+    {
+      "k": 4,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.23241366844755496,
+      "informative": true,
+      "centered_reward_variance": 0.05401611328125,
+      "advantage_variance": 0.9999913947096768,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999913947096768
+    },
+    {
+      "k": 4,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.13997244427475716,
+      "informative": true,
+      "centered_reward_variance": 0.01959228515625,
+      "advantage_variance": 0.9999857116264721,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999857116264721
+    },
+    {
+      "k": 4,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.10065702130254005,
+      "informative": true,
+      "centered_reward_variance": 0.0101318359375,
+      "advantage_variance": 0.9999801308426343,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999801308426343
+    },
+    {
+      "k": 4,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.3506661750973736,
+      "informative": true,
+      "centered_reward_variance": 0.12296676635742188,
+      "advantage_variance": 0.9999942965943485,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999942965943485
+    },
+    {
+      "k": 4,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.28002663621910595,
+      "informative": true,
+      "centered_reward_variance": 0.0784149169921875,
+      "advantage_variance": 0.9999928578605458,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999928578605458
+    },
+    {
+      "k": 4,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.2870695125388568,
+      "informative": true,
+      "centered_reward_variance": 0.08240890502929688,
+      "advantage_variance": 0.9999930330827127,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999930330827127
+    },
+    {
+      "k": 4,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.15600566834153015,
+      "informative": true,
+      "centered_reward_variance": 0.0243377685546875,
+      "advantage_variance": 0.9999871800762666,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999871800762666
+    },
+    {
+      "k": 4,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.39311705079403514,
+      "informative": true,
+      "centered_reward_variance": 0.154541015625,
+      "advantage_variance": 0.999994912476158,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999994912476158
+    },
+    {
+      "k": 4,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.9291682997434032,
+      "informative": true,
+      "centered_reward_variance": 0.8633537292480469,
+      "advantage_variance": 0.9999978475408902,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.24504858376779937
+    },
+    {
+      "k": 4,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.4523160883165665,
+      "informative": true,
+      "centered_reward_variance": 0.20458984375,
+      "advantage_variance": 0.9999955783280341,
+      "eligible_completions": 3,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.36873345310663785
+    },
+    {
+      "k": 4,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 4,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 4,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 4,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 4,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.6476722706100575,
+      "informative": true,
+      "centered_reward_variance": 0.4194793701171875,
+      "advantage_variance": 0.9999969120256356,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.15133087749644067
+    },
+    {
+      "k": 4,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.7406928824046589,
+      "informative": true,
+      "centered_reward_variance": 0.5486259460449219,
+      "advantage_variance": 0.9999972998310134,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 4,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.8540422922780299,
+      "informative": true,
+      "centered_reward_variance": 0.7293882369995117,
+      "advantage_variance": 0.9999976581997103,
+      "eligible_completions": 3,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.3765963914261934
+    },
+    {
+      "k": 4,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.2346033476622236,
+      "informative": true,
+      "centered_reward_variance": 1.5242454260587692,
+      "advantage_variance": 0.9999983800484797,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.45649369288564656
+    },
+    {
+      "k": 4,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.6624866412273439,
+      "informative": true,
+      "centered_reward_variance": 0.4388885498046875,
+      "advantage_variance": 0.9999969810780367,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999969810780367
+    },
+    {
+      "k": 4,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.6915276199970252,
+      "informative": true,
+      "centered_reward_variance": 0.47821044921875,
+      "advantage_variance": 0.9999971078585959,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999971078585959
+    },
+    {
+      "k": 4,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.3085875691627854,
+      "informative": true,
+      "centered_reward_variance": 0.09522628784179688,
+      "advantage_variance": 0.9999935188890348,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999935188890348
+    },
+    {
+      "k": 4,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.42058450625801336,
+      "informative": true,
+      "centered_reward_variance": 0.17689132690429688,
+      "advantage_variance": 0.9999952447300429,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999952447300429
+    },
+    {
+      "k": 4,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.3807141149270506,
+      "informative": true,
+      "centered_reward_variance": 0.1449432373046875,
+      "advantage_variance": 0.9999947467350393,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999947467350393
+    },
+    {
+      "k": 4,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.4436475178756075,
+      "informative": true,
+      "centered_reward_variance": 0.1968231201171875,
+      "advantage_variance": 0.9999954919318664,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999954919318664
+    },
+    {
+      "k": 4,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.67689572204825,
+      "informative": true,
+      "centered_reward_variance": 0.4581878185272217,
+      "advantage_variance": 0.999997045341693,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.999997045341693
+    },
+    {
+      "k": 4,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.3588351131266756,
+      "informative": true,
+      "centered_reward_variance": 1.846432864665985,
+      "advantage_variance": 0.9999985281527001,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999985281527001
+    },
+    {
+      "k": 4,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.5311745982795317,
+      "informative": true,
+      "centered_reward_variance": 0.2821464538574219,
+      "advantage_variance": 0.9999962347703395,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999962347703395
+    },
+    {
+      "k": 4,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.28839529206008524,
+      "informative": true,
+      "centered_reward_variance": 0.08317184448242188,
+      "advantage_variance": 0.9999930651101019,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999930651101019
+    },
+    {
+      "k": 4,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.4370114459670936,
+      "informative": true,
+      "centered_reward_variance": 0.19097900390625,
+      "advantage_variance": 0.9999954234765392,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999954234765392
+    },
+    {
+      "k": 4,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.495016053835315,
+      "informative": true,
+      "centered_reward_variance": 0.2450408935546875,
+      "advantage_variance": 0.9999959597392367,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999959597392367
+    },
+    {
+      "k": 4,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 4,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reward_std": 0.3646224500470845,
+      "informative": true,
+      "centered_reward_variance": 0.13294953107833862,
+      "advantage_variance": 0.9999945148967869,
+      "eligible_completions": 0,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 4,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 1,
+      "n_generations": 4,
+      "generation_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.859078095906142,
+      "informative": true,
+      "centered_reward_variance": 0.7380151748657227,
+      "advantage_variance": 0.999997671927014,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.3058436535913208
+    },
+    {
+      "k": 8,
+      "prompt_id": "01a4b2ed4479c8fa682c3466f7db16f277168d90c8450a729089f4527345ee8d",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.9795737868410508,
+      "informative": true,
+      "centered_reward_variance": 3.9187123775482178,
+      "advantage_variance": 0.9999989896822752,
+      "eligible_completions": 6,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.46730191964125023
+    },
+    {
+      "k": 8,
+      "prompt_id": "15837ad2725266a35255f91d2e023ea644ede5cb9d7ec9270ab3c6dd6449a74c",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.3636748120182155,
+      "informative": true,
+      "centered_reward_variance": 0.13225936889648438,
+      "advantage_variance": 0.9999945006041528,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999945006041528
+    },
+    {
+      "k": 8,
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.6329310623998741,
+      "informative": true,
+      "centered_reward_variance": 0.40060172975063324,
+      "advantage_variance": 0.9999968401056939,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999968401056938
+    },
+    {
+      "k": 8,
+      "prompt_id": "4f38c04a24c73c45df69326d4c7cd11dd422127645725ebba220231150bca382",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.7184153897474302,
+      "informative": true,
+      "centered_reward_variance": 0.5161206722259521,
+      "advantage_variance": 0.9999972161010848,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999972161010848
+    },
+    {
+      "k": 8,
+      "prompt_id": "527fbcd702b2e3e8125b5516be289806fa79e2685c0e4285276d03acf3dcc043",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.7473388189352107,
+      "informative": true,
+      "centered_reward_variance": 0.5585153102874756,
+      "advantage_variance": 0.9999973238430344,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999973238430344
+    },
+    {
+      "k": 8,
+      "prompt_id": "5294c9606e5e6fb93dc94319d5547c1cba3d6d44da00ee551d2621227e3b6ee8",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.9530207389339215,
+      "informative": true,
+      "centered_reward_variance": 0.9082485288381577,
+      "advantage_variance": 0.9999979014130853,
+      "eligible_completions": 2,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.22444805263571427
+    },
+    {
+      "k": 8,
+      "prompt_id": "5df5fb2b07b896cb5c4419afc9d3fd2b653535528abe1819bd2b52c07d52726b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.1781095799246562,
+      "informative": true,
+      "centered_reward_variance": 0.0317230224609375,
+      "advantage_variance": 0.9999887710523074,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999887710523074
+    },
+    {
+      "k": 8,
+      "prompt_id": "651e4c1d0b8bf0212c220f3f0a7d08161ad0952d9e3ea9d0963ab97a45937ea6",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.47132480689723505,
+      "informative": true,
+      "centered_reward_variance": 0.22214707359671593,
+      "advantage_variance": 0.9999957566552712,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999957566552712
+    },
+    {
+      "k": 8,
+      "prompt_id": "81b5deabb0959afb606520d2b821cd91dfd5c103f414ed5c2c132d18b0cc2f3a",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.35993681406126987,
+      "informative": true,
+      "centered_reward_variance": 0.12955451011657715,
+      "advantage_variance": 0.9999944434923378,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999944434923378
+    },
+    {
+      "k": 8,
+      "prompt_id": "a2d24c910daf54855e433d30c3e03a33384b87f028e9306be71ecab95700964b",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.19200321449132043,
+      "informative": true,
+      "centered_reward_variance": 0.036865234375,
+      "advantage_variance": 0.9999895835891046,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999895835891046
+    },
+    {
+      "k": 8,
+      "prompt_id": "ad86afe9508e533cc19d35c42f785e900274a28e57d150e0007c7fb632a70889",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.2587853773322521,
+      "informative": true,
+      "centered_reward_variance": 0.0669698715209961,
+      "advantage_variance": 0.9999922716328565,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999922716328565
+    },
+    {
+      "k": 8,
+      "prompt_id": "b8b9d3c72997de501f1e5179b0e5e2b5dae4c865f92dbe51ac4224e2039ea58d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.28358507379548353,
+      "informative": true,
+      "centered_reward_variance": 0.08042049407958984,
+      "advantage_variance": 0.9999929474799418,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999929474799418
+    },
+    {
+      "k": 8,
+      "prompt_id": "ba7ddaf72f0e034da39b43276b9f418894a12a6fffdbcf6359a302ef1b34688e",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.3191133709292974,
+      "informative": true,
+      "centered_reward_variance": 0.10183334350585938,
+      "advantage_variance": 0.9999937326643724,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999937326643724
+    },
+    {
+      "k": 8,
+      "prompt_id": "bdfcf969f2a84458b2498e0acc198d3094334b81d595fed1724210d7c9f89279",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.2204730251883498,
+      "informative": true,
+      "centered_reward_variance": 1.4895544052124023,
+      "advantage_variance": 0.9999983612931214,
+      "eligible_completions": 4,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.6859486515568047
+    },
+    {
+      "k": 8,
+      "prompt_id": "be78486affffe4f57015a153c5529c949aeb7511e1f30ed76da522452f245bed",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.0,
+      "informative": false,
+      "centered_reward_variance": 0.0,
+      "advantage_variance": 0.0,
+      "eligible_completions": 8,
+      "effective_informative": false,
+      "masked_advantage_second_moment": 0.0
+    },
+    {
+      "k": 8,
+      "prompt_id": "c359f7ed5e4a168b1e27bd1c27dc9752980103a2e1b38991e5011a7ea44d214e",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.7471864697278944,
+      "informative": true,
+      "centered_reward_variance": 0.5582876205444336,
+      "advantage_variance": 0.9999973232973747,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.011993546723111068
+    },
+    {
+      "k": 8,
+      "prompt_id": "cb3bebe583bd8475019b58042be3a76432b23c81b79b32c441d4b3bf203760df",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.0774114690525276,
+      "informative": true,
+      "centered_reward_variance": 1.1608154736459255,
+      "advantage_variance": 0.9999981437015728,
+      "eligible_completions": 5,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.39738284311985195
+    },
+    {
+      "k": 8,
+      "prompt_id": "d31b039922e3bb89d63a8f7331c90d77437a449e4b5f757a114b28002ffae60a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.7185137816655707,
+      "informative": true,
+      "centered_reward_variance": 0.5162620544433594,
+      "advantage_variance": 0.9999972164823058,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999972164823058
+    },
+    {
+      "k": 8,
+      "prompt_id": "d407599fef051a44d505c8439c3c6a6fb7d8fb6658384a4c391e9c2f2146f16d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.3900972998116143,
+      "informative": true,
+      "centered_reward_variance": 0.1521759033203125,
+      "advantage_variance": 0.9999948730936858,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999948730936858
+    },
+    {
+      "k": 8,
+      "prompt_id": "d618f38c0b2f73bb7985a1f07a7b4ca3b70e62a96407b8f6877da59e9241ba82",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.4307515235028194,
+      "informative": true,
+      "centered_reward_variance": 0.185546875,
+      "advantage_variance": 0.9999953569681679,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999953569681679
+    },
+    {
+      "k": 8,
+      "prompt_id": "d995e3ae06848698448f0310c0956505e70240e048f520449e325f00ed1479a0",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 1.0813008883524027,
+      "informative": true,
+      "centered_reward_variance": 1.1692116111516953,
+      "advantage_variance": 0.9999981503786348,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999981503786348
+    },
+    {
+      "k": 8,
+      "prompt_id": "da4fae100599eb9dfb9500f28dd604665eaba000cd4b94940f3471c85c8de99d",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.4283893743484863,
+      "informative": true,
+      "centered_reward_variance": 0.1835174560546875,
+      "advantage_variance": 0.9999953313664698,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.9999953313664698
+    },
+    {
+      "k": 8,
+      "prompt_id": "de9a80e769756c36c3bec31ccca84a180e2862f7dd06ef5e5a36fde7caceaa2a",
+      "difficulty_bin": "higher_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.4708246731031992,
+      "informative": true,
+      "centered_reward_variance": 0.22167587280273438,
+      "advantage_variance": 0.99999575214779,
+      "eligible_completions": 8,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.99999575214779
+    },
+    {
+      "k": 8,
+      "prompt_id": "faff5c962224bd104f4c6eb8c00bcfd84c37b29d3de55e600ccc3cc3ea4c3f99",
+      "difficulty_bin": "lower_reward",
+      "group_index": 0,
+      "n_generations": 8,
+      "generation_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reward_std": 0.8345445721364121,
+      "informative": true,
+      "centered_reward_variance": 0.6964646428823471,
+      "advantage_variance": 0.9999976034876121,
+      "eligible_completions": 1,
+      "effective_informative": true,
+      "masked_advantage_second_moment": 0.03464126194887201
+    }
+  ],
+  "cache_sha256": "d43024a41301a0b1de63d9bce3f484f8259263dd6495253dd52fecaf73fbbf9c"
+}

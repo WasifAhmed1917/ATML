@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "total_tests": 30,
+  "task3_tests": 12,
+  "test_command": "USE_TF=0 python -m unittest discover -s tests -v",
+  "device": "CPU",
+  "course_model_gpu_smoke_run": false,
+  "course_model_full_experiments_run": false,
+  "code_sha256": "cc86f319dbf366722c9c99fd7b9981926b131c2f0ac1afee6c5dada25b2cf96a",
+  "released_training_config_matches": true,
+  "notebook_code_cells_parse": true,
+  "checks": [
+    "within-prompt advantages and independence",
+    "sign-aware minimum clipping",
+    "normalization length gradients",
+    "whole-completion truncation masking",
+    "all-masked updates skip AdamW decay",
+    "actual tiny Qwen2/PEFT microbatch vs full-batch optimizer equivalence",
+    "gradient checkpointing and inference-tensor-safe group collection",
+    "same-epoch overflow replay",
+    "optimizer checkpoint recovery and interrupted final save",
+    "equal cached generation budgets and fixed bins",
+    "reject smoke/incomplete/mismatched artifacts",
+    "complete numeric export and all four plots with controlled test artifacts",
+    "manual review notes preserved on export",
+    "Task 1 and Task 2 regression tests"
+  ],
+  "released_assets_validated": {
+    "train_prompts": 1200,
+    "heldout_prompts": 200,
+    "cached_prompts": 24,
+    "cached_generations": 192,
+    "grpo_midpoint_files": true
+  }
+}

@@ -18,3 +18,12 @@ metrics, qualitative review, and the report are still pending. This upload conta
 
 PPO continuation, clipping and KL studies are supplied. Full-size GPU smoke tests
 and experiments remain pending, as recorded in the supplied validation metadata.
+
+## Programming Assignment 2 — Task 3
+
+[Task 3 implementation](PA2/task3_grpo) ·
+[Task 3 requirements](PA2/TASK3_REQUIREMENTS.md) ·
+[Run Task 3 in Colab](https://colab.research.google.com/github/WasifAhmed1917/ATML/blob/main/PA2/notebooks/ATML_PA2_T3.ipynb)
+
+Includes GRPO continuation, cached group-size diagnostics and normalization
+comparisons. Full-size GPU smoke tests and training experiments remain pending.
