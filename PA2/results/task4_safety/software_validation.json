@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "task4_tests": 9,
+  "test_scope": [
+    "conditional denominators and ambiguous cases",
+    "exact judge arguments/parser",
+    "fixed policy and checkpoint validation",
+    "released audit RNG selection",
+    "human ambiguity/confusion and incomplete status",
+    "disconnect during generation with original batch replay",
+    "per-response judge resume",
+    "blind sheet preservation/full aggregate exports and plots",
+    "real tiny Qwen2 deterministic generation and frozen judge"
+  ],
+  "released_feedback_config_byte_identical": true,
+  "released_judge_functions_and_audit_selector_ast_identical": true,
+  "notebook_cells_compile": true,
+  "full_course_gpu_evaluation_run": false,
+  "xstest_sha256": "4f1b18b267a5ad6aeebedd46c5128f61e69a8f367a81626a311ae2cf8c936a20",
+  "full_task_completion_requires": "Colab generation and judging, blind human labels, student qualitative interpretation"
+}

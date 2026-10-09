@@ -238,3 +238,7 @@ python -m task3_grpo.run_all --stage all --resume
 ```
 
 Read `TASK3_REQUIREMENTS.md` for the objective fix, exact configuration, cache regrouping/difficulty-bin rule, truncation mask, and the scope of the supplied Dr.GRPO-style variant. Code and local integration checks are complete; GPU experiment results are produced when you run the notebook.
+
+## Task 4: Safety calibration
+
+Run [the Task 4 Colab notebook](notebooks/ATML_PA2_T4.ipynb) after completing the standard adapters from Tasks 1–3. It uses the exact released feedback configuration, fixed XSTest prompts, four prescribed frozen policies, common greedy decoding and the unchanged categorical AI judge. Generation and judging resume from saved Drive records with live progress. The notebook creates a blind 60-prompt audit joined to all four policies, exports conditional calibration/category metrics and human/AI agreement, and plots the comparison. Human audit labels and qualitative interpretation remain required; no Task 4 result is used for policy tuning. See [Task 4 requirements](TASK4_REQUIREMENTS.md).
