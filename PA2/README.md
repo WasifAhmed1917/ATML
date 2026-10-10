@@ -242,3 +242,16 @@ Read `TASK3_REQUIREMENTS.md` for the objective fix, exact configuration, cache r
 ## Task 4: Safety calibration
 
 Run [the Task 4 Colab notebook](notebooks/ATML_PA2_T4.ipynb) after completing the standard adapters from Tasks 1–3. It uses the exact released feedback configuration, fixed XSTest prompts, four prescribed frozen policies, common greedy decoding and the unchanged categorical AI judge. Generation and judging resume from saved Drive records with live progress. The notebook creates a blind 60-prompt audit joined to all four policies, exports conditional calibration/category metrics and human/AI agreement, and plots the comparison. Human audit labels and qualitative interpretation remain required; no Task 4 result is used for policy tuning. See [Task 4 requirements](TASK4_REQUIREMENTS.md).
+
+## Completed Task 5 implementation
+
+Task 5 evaluates the untouched SFT base and the two **course-supplied** math adapters, without training. It uses the unchanged released requirements/configurations, exact verifier and pairwise judge. The fixed 300 GSM8K, 100 SVAMP and 100 diagnostic responses are validated before evaluation. Task 4's manual audit can be completed independently.
+
+```bash
+python -m task5_feedback.download_assets
+python -m task5_feedback.validate_data
+python -m unittest discover -s tests -p 'test_task5*.py' -v
+python -m task5_feedback.run_all --stage all --resume
+```
+
+See [Task 5 protocol, exact stage commands and evidence conventions](task5_feedback/README.md). Launch [notebooks/ATML_PA2_T5.ipynb](notebooks/ATML_PA2_T5.ipynb) in Colab A100. Results and streamed logs persist in Drive; completed rows resume after a disconnect. Full GPU evaluations are still required to produce Task 5's report evidence.
